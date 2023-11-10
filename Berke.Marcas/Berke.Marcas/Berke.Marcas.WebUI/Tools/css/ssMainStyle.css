@@ -1,0 +1,561 @@
+body
+{
+	/*background-color:"aliceblue"	 */
+	background-color: #ffffff;
+}
+.menutit0
+{
+	font-size:12pt;
+	font-family:Sans-Serif,Verdana;
+	font-weight:bold;
+}
+.menutit1
+{
+	font-size:10pt;
+	font-family:Sans-Serif,Verdana;
+	font-weight:bold;	
+}
+.menutit2
+{
+	font-size:10pt;
+	font-family:Sans-Serif,Verdana;
+}
+.LinkBuscar
+{		
+	font-family:Verdana;
+	font-size:10	
+}
+
+.Text
+{
+	font-family:Verdana;
+	font-size:11
+}
+
+A:Link
+{
+	color:"#0066cc"
+}
+
+.link1
+{
+	COLOR: #000000; 
+	TEXT-DECORATION: none;
+	FONT-SIZE:11;
+	FONT-FAMILY: verdana;
+} 
+
+A:Visited
+{
+	color:"#0066cc"
+}
+
+A:hover
+{
+	color:"#FF9933"	
+}
+
+.BUTTON
+{
+    background-color: #efefef;	
+    border-top: 1px solid #0e0e0e;
+    border-left: 1px solid #0e0e0e;    
+    border-bottom: 2px solid #0e0e0e;    
+    border-right: 2px solid #0e0e0e;    
+        
+    padding-left:2px;  
+    padding-right:2px;      
+	Font-family:"Verdana";
+	Font-Size:10;	  
+	/*
+	border:solid 1px;
+	border-color:#666666;
+	background-color:#B5C7DE;
+	Font-family:"Verdana";
+	Font-Size:10;	
+	*/
+}
+
+.LABEL1
+{
+	border-color: "DimGray";
+    border-style: Solid;
+    border-width: 1px;
+    width:144px;
+	background-color:"WhiteSmoke";
+}
+
+.LABEL2
+{
+	border-color: "DimGray";
+    border-style: Solid;
+    border-width: 1px;
+    width:50px;
+	background-color:"WhiteSmoke";
+}
+
+.LABEL3
+{
+	border-color: "DimGray";
+    border-style: Solid;
+    border-width: 1px;
+    width:400px;
+	background-color:"WhiteSmoke";
+}
+
+.LABEL4
+{
+	font-size: 10px;
+	font-family: "Verdana";
+}
+ 
+.LABEL5
+{
+	FONT-SIZE:11;
+	FONT-FAMILY: verdana; 
+	FONT-WEIGHT: bold;
+	COLOR:Navy;
+}
+
+.TextBox1
+{
+	border-color: "DimGray";
+    border-style: Solid;
+    border-width: 1px;
+    width:144px;
+	background-color:"WhiteSmoke";
+}
+
+.TextBox2
+{
+	border-color: "DimGray";
+    border-style: Solid;
+    border-width: 1px;
+    width:50px;
+	background-color:"WhiteSmoke";
+}
+
+.TextBox3
+{
+	width:278px;
+	background-color:"WhiteSmoke";
+}
+
+.TextBox4
+{
+	border-color: "DimGray";
+    border-style: Solid;
+    border-width: 1px;
+    width:137px;
+	background-color:"WhiteSmoke";
+}
+
+.TextArea1
+{
+	border-color: "DimGray";
+    border-style: Solid;
+    border-width: 1px;
+    width:400px;
+	height:80;
+	background-color:"WhiteSmoke";
+	
+}
+
+.TextArea2
+{
+	border-color: "DimGray";
+    border-style: Solid;
+    border-width: 1px;
+    width:550px;
+	height:100;
+	background-color:"WhiteSmoke";
+	
+}
+.TitleTable1
+{
+	FONT-SIZE:11;
+	FONT-FAMILY: verdana; 
+	FONT-WEIGHT: bold;	
+	height:2;
+	BACKGROUND-IMAGE:url(../../images/sapphirelight.gif);
+	width:90%;
+}
+.TitleTable2
+{
+	FONT-SIZE:11;
+	FONT-FAMILY: verdana; 
+	FONT-WEIGHT: bold;	
+	height:2;
+}
+.TitleTable3
+{
+	FONT-SIZE:11;
+	FONT-FAMILY: verdana; 
+	FONT-WEIGHT: bold;
+	BACKGROUND-IMAGE:url(../../images/sapphirelight.gif);	
+	width:48%;
+}
+.TitleTable4
+{
+	FONT-SIZE:10;
+	FONT-FAMILY: verdana; 
+	BACKGROUND-IMAGE:url(../../images/sapphirelight.gif);
+	width:50%;
+}
+.Table1
+{
+	BORDER-RIGHT: 1px solid; 
+	BORDER-TOP: 1px solid; 
+	BORDER-LEFT: 1px solid; 
+	BORDER-BOTTOM: 1px solid;	
+	border-color:"#9ccfff";
+	width:90%;
+}
+.Table2
+{
+	BORDER-RIGHT: 1px solid; 
+	BORDER-TOP: 1px solid; 
+	BORDER-LEFT: 1px solid; 
+	BORDER-BOTTOM: 1px solid;	
+	border-color:"#9ccfff";
+	width:90%;
+	border:0;
+}
+.Table3
+{
+	BORDER-RIGHT: 1px solid; 
+	BORDER-TOP: 1px solid; 
+	BORDER-LEFT: 1px solid; 
+	BORDER-BOTTOM: 1px solid;	
+	border-color:"#9ccfff";
+	width:100%;
+}
+.Table4
+{
+	BORDER-RIGHT: 1px solid; 
+	BORDER-LEFT: 1px solid; 
+	BORDER-BOTTOM: 1px solid;	
+	border-color:"#9ccfff";
+	width:100%;
+}
+.Table5
+{
+	BORDER-BOTTOM: 1px solid;	
+	border-color:"#9ccfff";
+	width:100%;
+}
+.TopTable
+{
+	
+	border-width:0;
+	border-Color:"#9ccfff" ;
+	width:98%;
+	FONT-SIZE:11;
+	FONT-FAMILY: verdana; 
+	FONT-WEIGHT: bold;	
+	height:2;
+	BACKGROUND-IMAGE:url(../../images/sapphirelight.gif);	
+	height:2;
+}
+.DropDownList1
+
+{
+	border-color: "DimGray";
+    border-style: Solid;
+    border-width: 1px;
+    width:144px;
+	background-color:"WhiteSmoke";	
+}
+.DropDownList2
+
+{
+	border-color: "DimGray";
+    border-style: Solid;
+    border-width: 1px;
+    width:280px;
+	background-color:"WhiteSmoke";	
+}
+
+.DropDownList3
+
+{
+	border-color: "DimGray";
+    border-style: Solid;
+    border-width: 1px;
+    width:60px;
+	background-color:"WhiteSmoke";	
+}
+
+.DropDownList4
+
+{
+	border-color: "DimGray";
+    border-style: Solid;
+    border-width: 1px;
+    width:50px;
+	background-color:"WhiteSmoke";	
+}
+
+.DashTitleArea 
+{
+	BACKGROUND-COLOR: #6699cc
+}
+
+.MenuTitles
+{
+	FONT-SIZE:11;
+	FONT-FAMILY: verdana; 	
+}
+ 
+ 
+ .Texto
+{
+	font-family:Verdana;
+	font-size:7pt;
+	text-align:left;
+}
+ .TextoInformativo
+{
+	font-family:Verdana;
+	font-size:9pt;
+	text-align:left;
+}
+.TextoInformativoLM
+{
+	font-size:9pt;
+	font-family:Verdana;
+	text-align:left;
+	vertical-align:middle
+}
+.TextoInformativoLT
+{
+	font-size:9pt;
+	font-family:Verdana;
+	text-align:left;
+	vertical-align:text-top
+}
+.TextoInformativoCM
+{
+	font-size:9pt;
+	font-family:Verdana;
+	text-align:cen
+.Etiqueta1
+{
+	font-family:Verdana;
+	font-size:7pt;
+	text-align:left;
+	margin-left:10px;
+}
+.Etiqueta2
+{
+	font-family:Verdana;
+	font-size:7pt;
+	text-align:right;
+	margin-right:5px;
+}
+
+ght;
+	margin-right:5px;
+}
+
+.Etiqueta3
+{
+	font-family:Verdana;
+	font-size:11;
+	text-align:left;
+	margin-top:15px;
+	margin-bottom:10px;
+	margin-left:10px;
+	margin-right:5px;
+}
+.Etiqueta4
+{
+	font-family:Verdana;
+	font-size:11;
+	text-align:left;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:5px;
+	margin-left:6px;
+}
+
+.Etiqueta5
+{
+	font-family:Verdana;
+	font-size:11;
+	text-align:left;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:5px;
+	margin-left:10px;
+}
+.Etiqueta6
+{
+	font-family:Verdana;
+	font-size:10;
+	font-weight:bold;
+	text-align:left;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:5px;
+	margin-left:10px;
+}
+.Etiqueta7
+{
+	font-family:Verdana;
+	font-size:11;
+	font-weight:bold;
+	color:Red;
+	text-align:left;
+	margin-left:10px;
+}
+.EtiqSubTitulo
+{
+	font-family:Verdana;
+	font-size:10;
+	text-align:left;
+}
+.ButtonEntidades
+{
+	text-align: right;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:20px;
+}
+
+.ButtonEntidades2
+{
+	text-align: right;
+	margin-top:15px;
+	margin-bottom:20px;
+	margin-left:10px;
+	margin-right:1px;
+}
+.ButtonEntidades3
+{
+	text-align: right;
+	margin-top:15px;
+	margin-bottom:20px;
+	margin-right:5px;
+}
+.ButtonAdministrativas
+{
+	text-align: right;
+	margin-left:5px;
+	margin-right:7px;
+	margin-bottom:10px;
+}
+.Table
+{
+	font-family:Verdana;
+	font-size:xx-small;
+	border:0;
+	padding:0;
+	width:100%;
+}
+.Table1Ent
+{
+	BORDER-RIGHT: 1px solid; 
+	BORDER-TOP: 1px solid; 
+	BORDER-LEFT: 1px solid; 
+	BORDER-BOTTOM: 1px solid;	
+	border-color:"#9ccfff";
+	width:100%;
+	margin-bottom:5px;
+}
+.Table2Ent
+{
+	BORDER-RIGHT: 1px solid; 
+	BORDER-TOP: 1px solid; 
+	BORDER-LEFT: 1px solid; 
+	BORDER-BOTTOM: 1px solid;	
+	border-color:"#9ccfff";
+	width:100%;
+}
+.Table3Ent
+{
+	width:100%;
+	margin-bottom:5px;
+}
+.TextArea1Ent
+{
+	border-color: "DimGray";
+    border-style: Solid;
+    border-width: 1px;
+    width:278px;
+	height:80;
+	background-color:"WhiteSmoke";
+}
+.TextArea2Ent
+{
+	width:100%;
+	height:80;
+}
+.TablaViasDirPF
+{
+	border-left-color:#6699cc;
+	border-right-color:#6699cc;
+	border-top-color:#6699cc;
+	border-bottom-color:#6699cc;
+	border-style:Solid;
+	border-width:1px;
+}
+.ColCabeceraViasDirPF1
+{
+	border-right:White 1px solid;
+	font-size:7pt;
+	font-family:Verdana;
+	font-weight: bold;
+	background-color: lightgrey;
+}
+.ColCabeceraViasDirPF2
+{
+	font-size:7pt;
+	font-family:Verdana;
+	font-weight: bold;
+	background-color: lightgrey;
+}
+.ColItemViasDirPF1
+{
+	border-right:White 1px solid;
+	border-top:White 1px solid;
+	background-color: #F5F5F5;
+}
+.ColItemViasDirPF2
+{
+	border-top:White 1px solid;
+	background-color: #F5F5F5;
+}
+.ColPieViasDirPF1
+{
+	border-right:White 1px solid;
+	border-top:White 1px solid;
+	background-color: #D3D3D3;
+}
+.ColPieViasDirPF2
+{
+	border-top:White 1px solid;
+	background-color: #D3D3D3;
+}
+.FuenteViasDirPF1
+{
+	font-size:7pt;
+	font-family:Verdana;
+}
+.Titulo
+{
+	font-size:14pt;
+	font-family:Arial;
+	font-weight: bold;
+	color:#003366;
+	margin-left:5px;
+}
+.subtitulo
+{
+	font-size:11pt;
+	font-family:Arial;
+	font-weight: bold;
+	color:#000000;
+	margin-left:5px;
+}
+

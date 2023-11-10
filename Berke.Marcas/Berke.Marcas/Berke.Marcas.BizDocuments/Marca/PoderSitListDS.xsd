@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="PoderSitListDS" targetNamespace="http://tempuri.org/PoderSitListDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/PoderSitListDS.xsd" xmlns:mstns="http://tempuri.org/PoderSitListDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="PoderSitListDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Poder">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="PoderInscID" type="xs:int" minOccurs="0" />
+							<xs:element name="InscripcionNro" type="xs:int" minOccurs="0" />
+							<xs:element name="InscripcionAnio" type="xs:int" minOccurs="0" />
+							<xs:element name="Inscripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="ActaNro" type="xs:int" minOccurs="0" />
+							<xs:element name="ActaAnio" type="xs:int" minOccurs="0" />
+							<xs:element name="Acta" type="xs:string" minOccurs="0" />
+							<xs:element name="TramiteSitID" type="xs:int" minOccurs="0" />
+							<xs:element name="Seleccionado" type="xs:boolean" minOccurs="0" />
+							<xs:element name="SituacionFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="SitVtoFecha" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Poderdante">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="PoderID" type="xs:int" minOccurs="0" />
+							<xs:element name="Denominacion" type="xs:string" minOccurs="0" />
+							<xs:element name="PropietarioID" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Usuario">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NomUsuario" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="PoderSitListDSKey1">
+			<xs:selector xpath=".//mstns:Poder" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:keyref name="PoderPoderdante" refer="PoderSitListDSKey1">
+			<xs:selector xpath=".//mstns:Poderdante" />
+			<xs:field xpath="mstns:PoderID" />
+		</xs:keyref>
+		<xs:key name="PoderSitListDSKey2">
+			<xs:selector xpath=".//mstns:Poderdante" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

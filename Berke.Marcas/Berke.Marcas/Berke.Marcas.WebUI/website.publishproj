@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+***********************************************************************************************
+website.publishproj
+
+WARNING: DO NOT MODIFY this file, it is used for the web publish process.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+***********************************************************************************************
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{c093c54f-a054-4a3a-853f-4e82e27bb2f9}</ProjectGuid>
+    <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/Berke.Marcas.WebUI</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SourceWebProject>
+    </SourceWebProject>
+    <SourceWebMetabasePath>
+    </SourceWebMetabasePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
+    <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
+    <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">1.0.0.0</AssemblyFileVersion>
+    <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Berke.Libs\Berke.Libs.Base\Berke.Libs.Base.csproj">
+      <Project>{E1E46ECB-C8AA-4157-9DE4-3A677014FA54}</Project>
+      <Name>Berke.Libs.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Berke.Libs\Berke.Libs.Boletin\Berke.Libs.Boletin.csproj">
+      <Project>{939C9191-0F94-4A1A-9503-7394AB474F5E}</Project>
+      <Name>Berke.Libs.Boletin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Berke.Libs\Berke.Libs.Gateway\Berke.Libs.Gateway.csproj">
+      <Project>{C7558DAE-8268-4B38-846E-E05E378BB566}</Project>
+      <Name>Berke.Libs.Gateway</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Berke.Libs\Berke.Libs.WebBase\Berke.Libs.WebBase.csproj">
+      <Project>{93941EFA-C231-4F3F-B883-73EC771AEE4B}</Project>
+      <Name>Berke.Libs.WebBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ecWebControls\ecWebControls.csproj">
+      <Project>{9A8E9FC0-7E21-45BA-BE21-BEB8C5157B50}</Project>
+      <Name>ecWebControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Berke.Marcas.BizActions\Berke.Marcas.BizActions.csproj">
+      <Project>{B7A963D9-BB0C-4EB3-A700-945B03FCC4D0}</Project>
+      <Name>Berke.Marcas.BizActions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Berke.Marcas.BizDocuments\Berke.Marcas.BizDocuments.csproj">
+      <Project>{40C725D1-CD89-4347-97EF-DB9A97D6BF54}</Project>
+      <Name>Berke.Marcas.BizDocuments</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Berke.Marcas.Dalc\Berke.Marcas.Dalc.csproj">
+      <Project>{2BC5983E-DE20-49E0-88F4-0BBFB32A91C9}</Project>
+      <Name>Berke.Marcas.Dalc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
+</Project>

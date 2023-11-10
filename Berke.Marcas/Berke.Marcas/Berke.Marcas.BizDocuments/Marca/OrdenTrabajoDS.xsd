@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="OrdenTrabajoDS" targetNamespace="http://tempuri.org/OrdenTrabajoDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/OrdenTrabajoDS.xsd" xmlns:mstns="http://tempuri.org/OrdenTrabajoDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="OrdenTrabajoDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="OrdenTrabajo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="Cliente" type="xs:string" minOccurs="0" />
+							<xs:element name="ClienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="ClienteCiudadPais" type="xs:string" minOccurs="0" />
+							<xs:element name="FuncionarioID" type="xs:int" minOccurs="0" />
+							<xs:element name="Nro" type="xs:int" minOccurs="0" />
+							<xs:element name="Anio" type="xs:int" minOccurs="0" />
+							<xs:element name="Facturable" type="xs:boolean" minOccurs="0" nillable="false" />
+							<xs:element name="Obs" type="xs:string" minOccurs="0" />
+							<xs:element name="NroAnio" type="xs:string" minOccurs="0" />
+							<xs:element name="AltaFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TramiteID" type="xs:int" minOccurs="0" />
+							<xs:element name="Sustituida" type="xs:boolean" minOccurs="0" />
+							<xs:element name="IdentificadorNro" type="xs:int" minOccurs="0" />
+							<xs:element name="IdentificadorAnio" type="xs:int" minOccurs="0" />
+							<xs:element name="ReferenciaExterna" type="xs:string" minOccurs="0" />
+							<xs:element name="Funcionario" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Marca">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" />
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="ClienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="OrdenTrabajoID" type="xs:int" minOccurs="0" />
+							<xs:element name="RefMarca" type="xs:string" minOccurs="0" />
+							<xs:element name="Limitado" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Prioridad" type="xs:boolean" minOccurs="0" />
+							<xs:element name="PrioridadActa" type="xs:string" minOccurs="0" />
+							<xs:element name="PrioridadFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PrioridadPais" type="xs:string" minOccurs="0" />
+							<xs:element name="PrioridadPaisID" type="xs:int" minOccurs="0" />
+							<xs:element name="PrioridadDocumento" type="xs:boolean" minOccurs="0" />
+							<xs:element name="PaisID" type="xs:int" minOccurs="0" />
+							<xs:element name="TramiteID" type="xs:int" minOccurs="0" />
+							<xs:element name="ExpedienteAntID" type="xs:int" minOccurs="0" />
+							<xs:element name="MarcaRegRenID" type="xs:int" minOccurs="0" />
+							<xs:element name="Denominacion" type="xs:string" minOccurs="0" />
+							<xs:element name="DenominacionClave" type="xs:string" minOccurs="0" />
+							<xs:element name="ClaseID" type="xs:int" minOccurs="0" />
+							<xs:element name="ClaseNro" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoID" type="xs:int" minOccurs="0" />
+							<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+							<xs:element name="RegistroNro" type="xs:int" minOccurs="0" />
+							<xs:element name="RegistroAnio" type="xs:int" minOccurs="0" />
+							<xs:element name="Registro" type="xs:string" minOccurs="0" />
+							<xs:element name="RegVtoFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Mensajes" type="xs:string" minOccurs="0" />
+							<xs:element name="Acta" type="xs:string" minOccurs="0" />
+							<xs:element name="Asignada" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ClaseDescripEsp" type="xs:string" minOccurs="0" />
+							<xs:element name="TraduccionIdiomaID" type="xs:integer" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Expediente_Poderdante">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PropietarioID" type="xs:int" minOccurs="0" />
+							<xs:element name="PoderdanteID" type="xs:int" minOccurs="0" />
+							<xs:element name="Denominacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Domicilio" type="xs:string" minOccurs="0" />
+							<xs:element name="Inscripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="Acta" type="xs:string" minOccurs="0" />
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="DomicilioID" type="xs:int" minOccurs="0" />
+							<xs:element name="PoderID" type="xs:int" minOccurs="0" />
+							<xs:element name="PoderObs" type="xs:string" minOccurs="0" />
+							<xs:element name="ConceptoPoder" type="xs:string" minOccurs="0" />
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Marca_ClaseIdioma">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="MarcaID" type="xs:int" minOccurs="0" />
+							<xs:element name="IdiomaID" type="xs:int" minOccurs="0" />
+							<xs:element name="Idioma" type="xs:string" minOccurs="0" />
+							<xs:element name="Descrip" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Usuario">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nomusuario" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Expediente_Poder">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="PoderID" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="OrdenTrabajoDSKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:OrdenTrabajo" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:key name="OrdenTrabajoDSKey3">
+			<xs:selector xpath=".//mstns:Marca_ClaseIdioma" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:key name="OrdenTrabajoDSKey2">
+			<xs:selector xpath=".//mstns:Marca" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:keyref name="OrdenTrabajoMarca" refer="OrdenTrabajoDSKey1">
+			<xs:selector xpath=".//mstns:Marca" />
+			<xs:field xpath="mstns:OrdenTrabajoID" />
+		</xs:keyref>
+		<xs:keyref name="MarcaMarca_ClaseIdioma" refer="OrdenTrabajoDSKey2">
+			<xs:selector xpath=".//mstns:Marca_ClaseIdioma" />
+			<xs:field xpath="mstns:MarcaID" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

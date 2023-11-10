@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="PoderdanteDS" targetNamespace="http://tempuri.org/PoderdanteDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/PoderdanteDS.xsd" xmlns:mstns="http://tempuri.org/PoderdanteDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="PoderdanteDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Poderdante">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="PropietarioID" type="xs:int" minOccurs="0" />
+							<xs:element name="PoderID" type="xs:int" minOccurs="0" />
+							<xs:element name="Denominacion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Poder">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="PoderInscID" type="xs:int" minOccurs="0" />
+							<xs:element name="PoderTipo" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="PoderInsc">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="Inscripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="Acta" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="PoderDomicilio">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="PoderID" type="xs:int" minOccurs="0" />
+							<xs:element name="Domicilio" type="xs:string" minOccurs="0" />
+							<xs:element name="Ciudad" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="PoderdanteDSKey1">
+			<xs:selector xpath=".//mstns:Poderdante" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:key name="PoderdanteDSKey2">
+			<xs:selector xpath=".//mstns:Poder" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:keyref name="PoderPoderdante" refer="PoderdanteDSKey2">
+			<xs:selector xpath=".//mstns:Poderdante" />
+			<xs:field xpath="mstns:PoderID" />
+		</xs:keyref>
+		<xs:key name="PoderdanteDSKey3">
+			<xs:selector xpath=".//mstns:PoderInsc" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:keyref name="PoderInscPoder" refer="PoderdanteDSKey3">
+			<xs:selector xpath=".//mstns:Poder" />
+			<xs:field xpath="mstns:PoderInscID" />
+		</xs:keyref>
+		<xs:key name="PoderdanteDSKey4">
+			<xs:selector xpath=".//mstns:PoderDomicilio" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:keyref name="PoderPoderDomicilio" refer="PoderdanteDSKey2">
+			<xs:selector xpath=".//mstns:PoderDomicilio" />
+			<xs:field xpath="mstns:PoderID" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

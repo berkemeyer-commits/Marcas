@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1E46ECB-C8AA-4157-9DE4-3A677014FA54}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Berke.Libs.Base</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Berke.Libs.Base</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fwkcore">
+      <HintPath>..\..\..\Program Files\fwkdevenv\fwkcore.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acceso.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Catalogo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeGen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Crypto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DocPath.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DSHelpers\DS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DSHelpers\ParamDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParamDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSHelpers\SimpleEntryDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SimpleEntryDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="errors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fonet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GlobalConst.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\AccesoDB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\Calc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\DataGrup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\DataSets.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\DBTabBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\DBTabs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\Encrypt-Decrypt.cs" />
+    <Compile Include="Helpers\Files.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\Formatters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\Nulls.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\TableGateway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IABMProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjConvert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Timer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="DSHelpers\ParamDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ParamDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="DSHelpers\SimpleEntryDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SimpleEntryDS.Designer.cs</LastGenOutput>
+    </Content>
+    <None Include="DSHelpers\ParamDS.xsx">
+      <DependentUpon>ParamDS.xsd</DependentUpon>
+    </None>
+    <None Include="DSHelpers\SimpleEntryDS.xsx">
+      <DependentUpon>SimpleEntryDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

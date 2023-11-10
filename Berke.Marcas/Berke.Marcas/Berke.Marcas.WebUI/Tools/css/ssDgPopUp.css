@@ -1,0 +1,42 @@
+.Cabecera
+{
+	margin-top:20px;
+	margin-bottom:10px;
+	font-size:10pt;
+	font-family:Verdana;
+	font-weight:bold;
+	background-color:#6699cc;
+	text-align:left;
+	height:30px;
+}
+.Pie
+{
+	width:100%;
+	border:solid 1px #6699cc;
+}
+.Item
+{
+	font-size:7pt;
+	font-family:Verdana;
+	text-align:left;
+	background-color:whitesmoke;
+}
+.AltItem
+{
+	font-size:7pt;
+	font-family:Verdana;
+	text-align:left;
+	background-color:White;
+}
+.TextoItem
+{
+	font-size:7pt;
+	font-family:Verdana;
+	text-align:left;
+}
+.TextoAltItem
+{
+	font-size:7pt;
+	font-family:Verdana;
+	text-align:left;
+}

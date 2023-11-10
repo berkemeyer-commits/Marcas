@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ParamDS" targetNamespace="http://tempuri.org/ParamDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ParamDS.xsd" xmlns:mstns="http://tempuri.org/ParamDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ParamDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SimpleString">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SimpleInt">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SimpleDate">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:date" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SimpleBoolean">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SimpleDecimal">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SimpleLong">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:long" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Tbl">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

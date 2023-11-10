@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ExpedienteMensajeDS" targetNamespace="http://tempuri.org/ExpedienteMensajeDS.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ExpedienteMensajeDS.xsd"
+	xmlns:mstns="http://tempuri.org/ExpedienteMensajeDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ExpedienteMensajeDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ExpedienteMensaje">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="MarcaID" type="xs:int" minOccurs="0" />
+							<xs:element name="Denominacion" type="xs:string" minOccurs="0" />
+							<xs:element name="VencimientoFecha" type="xs:date" minOccurs="0" />
+							<xs:element name="Tramite" type="xs:string" minOccurs="0" />
+							<xs:element name="Registro" type="xs:string" minOccurs="0" />
+							<xs:element name="Cliente" type="xs:string" minOccurs="0" />
+							<xs:element name="ClienteDireccion" type="xs:string" minOccurs="0" />
+							<xs:element name="Poderdante" type="xs:string" minOccurs="0" />
+							<xs:element name="Pertenencia" type="xs:string" minOccurs="0" />
+							<xs:element name="ClienteIdioma" type="xs:string" minOccurs="0" />
+							<xs:element name="ObsAvisoRen" type="xs:string" minOccurs="0" />
+							<xs:element name="Seleccionado" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FechaDesde" type="xs:date" minOccurs="0" />
+							<xs:element name="FechaHasta" type="xs:date" minOccurs="0" />
+							<xs:element name="ClienteID" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ExpedienteMensaje_IN">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="Instruccion" type="xs:string" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:date" minOccurs="0" />
+							<xs:element name="InstruccionID" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ExpedienteMensaje_OUT">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="ViaCom" type="xs:string" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:date" minOccurs="0" />
+							<xs:element name="ViaComID" type="xs:int" minOccurs="0" />
+							<xs:element name="MensajeTipoID" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Marca">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="Denominacion" type="xs:string" minOccurs="0" />
+							<xs:element name="ClaseNro" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Poderdante_Marca">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="MarcaID" type="xs:int" minOccurs="0" />
+							<xs:element name="Poderdante" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="ExpedienteMensajeDSKey1">
+			<xs:selector xpath=".//mstns:ExpedienteMensaje" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:keyref name="ExpedienteMensajeExpedienteMensaje_IN" refer="ExpedienteMensajeDSKey1">
+			<xs:selector xpath=".//mstns:ExpedienteMensaje_IN" />
+			<xs:field xpath="mstns:ExpedienteID" />
+		</xs:keyref>
+		<xs:keyref name="ExpedienteMensajeExpedienteMensaje_OUT" refer="ExpedienteMensajeDSKey1">
+			<xs:selector xpath=".//mstns:ExpedienteMensaje_OUT" />
+			<xs:field xpath="mstns:ExpedienteID" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

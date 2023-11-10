@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40C725D1-CD89-4347-97EF-DB9A97D6BF54}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Berke.Marcas.BizDocuments</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Berke.Marcas.BizDocuments</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\Catalog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Marca\BoletinDetalleDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoletinDetalleDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\BoletinDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoletinDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\BoletinListDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoletinListDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\BoletinParamDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoletinParamDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\ClaseDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClaseDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\DatosAuxDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosAuxDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\ExpedienteInstParamDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpedienteInstParamDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\ExpedienteListDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpedienteListDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\ExpedienteMensajeDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpedienteMensajeDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\ExpedienteParamDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpedienteParamDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\ExpedientePendienteDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpedientePendienteDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\ExpedientePertenencia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpedientePertenencia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\ExpedienteSitListDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpedienteSitListDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\ExpedienteSitParamDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpedienteSitParamDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\MarcaActualizarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarcaActualizarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\MarcaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarcaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\MarcaRegRenDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarcaRegRenDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\MarcaRegRen_PertenenciaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarcaRegRen_PertenenciaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\MarcaVariosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarcaVariosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\MergeListDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MergeListDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\OrdenTrabajoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenTrabajoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\OrdenTrabajoLightDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenTrabajoLightDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\OrdenTrabajoListDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenTrabajoListDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\OrdenTrabajoParamDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenTrabajoParamDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\OrdenTrabajoTVDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenTrabajoTVDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\PoderdanteDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PoderdanteDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\PoderDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PoderDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\PoderListDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PoderListDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\PoderParamDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PoderParamDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\PoderSitListDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PoderSitListDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\PoderSitParamDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PoderSitParamDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\TramiteSitDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TramiteSitDS.xsd</DependentUpon>
+    </Compile>
+    <Content Include="Marca\BoletinDetalleDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BoletinDetalleDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\BoletinDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BoletinDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\BoletinListDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BoletinListDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\BoletinParamDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BoletinParamDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\ClaseDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClaseDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\DatosAuxDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosAuxDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\ExpedienteInstParamDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExpedienteInstParamDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\ExpedienteListDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExpedienteListDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\ExpedienteMensajeDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExpedienteMensajeDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\ExpedienteParamDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExpedienteParamDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\ExpedientePendienteDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExpedientePendienteDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\ExpedientePertenencia.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExpedientePertenencia.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\ExpedienteSitListDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExpedienteSitListDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\ExpedienteSitParamDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExpedienteSitParamDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\MarcaActualizarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarcaActualizarDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\MarcaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarcaDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\MarcaRegRenDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarcaRegRenDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\MarcaRegRen_PertenenciaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarcaRegRen_PertenenciaDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\MarcaVariosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarcaVariosDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\MergeListDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MergeListDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\OrdenTrabajoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrdenTrabajoDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\OrdenTrabajoLightDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrdenTrabajoLightDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\OrdenTrabajoListDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrdenTrabajoListDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\OrdenTrabajoParamDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrdenTrabajoParamDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\OrdenTrabajoTVDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrdenTrabajoTVDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\PoderdanteDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PoderdanteDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\PoderDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PoderDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\PoderListDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PoderListDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\PoderParamDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PoderParamDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\PoderSitListDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PoderSitListDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\PoderSitParamDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PoderSitParamDS.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Marca\TramiteSitDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TramiteSitDS.Designer.cs</LastGenOutput>
+    </Content>
+    <None Include="Marca\BoletinDetalleDS.xsx">
+      <DependentUpon>BoletinDetalleDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\BoletinDS.xsx">
+      <DependentUpon>BoletinDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\BoletinListDS.xsx">
+      <DependentUpon>BoletinListDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\BoletinParamDS.xsx">
+      <DependentUpon>BoletinParamDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\ClaseDS.xsx">
+      <DependentUpon>ClaseDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\DatosAuxDS.xsx">
+      <DependentUpon>DatosAuxDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\ExpedienteInstParamDS.xsx">
+      <DependentUpon>ExpedienteInstParamDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\ExpedienteListDS.xsx">
+      <DependentUpon>ExpedienteListDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\ExpedienteMensajeDS.xsx">
+      <DependentUpon>ExpedienteMensajeDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\ExpedienteParamDS.xsx">
+      <DependentUpon>ExpedienteParamDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\ExpedientePendienteDS.xsx">
+      <DependentUpon>ExpedientePendienteDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\ExpedientePertenencia.xsx">
+      <DependentUpon>ExpedientePertenencia.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\ExpedienteSitListDS.xsx">
+      <DependentUpon>ExpedienteSitListDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\ExpedienteSitParamDS.xsx">
+      <DependentUpon>ExpedienteSitParamDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\MarcaActualizarDS.xsx">
+      <DependentUpon>MarcaActualizarDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\MarcaDS.xsx">
+      <DependentUpon>MarcaDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\MarcaRegRenDS.xsx">
+      <DependentUpon>MarcaRegRenDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\MarcaRegRen_PertenenciaDS.xsx">
+      <DependentUpon>MarcaRegRen_PertenenciaDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\MarcaVariosDS.xsx">
+      <DependentUpon>MarcaVariosDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\MergeListDS.xsx">
+      <DependentUpon>MergeListDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\OrdenTrabajoDS.xsx">
+      <DependentUpon>OrdenTrabajoDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\OrdenTrabajoLightDS.xsx">
+      <DependentUpon>OrdenTrabajoLightDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\OrdenTrabajoListDS.xsx">
+      <DependentUpon>OrdenTrabajoListDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\OrdenTrabajoParamDS.xsx">
+      <DependentUpon>OrdenTrabajoParamDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\OrdenTrabajoTVDS.xsx">
+      <DependentUpon>OrdenTrabajoTVDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\PoderdanteDS.xsx">
+      <DependentUpon>PoderdanteDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\PoderDS.xsx">
+      <DependentUpon>PoderDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\PoderListDS.xsx">
+      <DependentUpon>PoderListDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\PoderParamDS.xsx">
+      <DependentUpon>PoderParamDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\PoderSitListDS.xsx">
+      <DependentUpon>PoderSitListDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\PoderSitParamDS.xsx">
+      <DependentUpon>PoderSitParamDS.xsd</DependentUpon>
+    </None>
+    <None Include="Marca\TramiteSitDS.xsx">
+      <DependentUpon>TramiteSitDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Marca\XML\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="MarcaVariosDS" targetNamespace="http://tempuri.org/MarcaVariosDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/MarcaVariosDS.xsd" xmlns:mstns="http://tempuri.org/MarcaVariosDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="MarcaVariosDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="MarcaRegRen">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="MarcaRegRenID" type="xs:int" minOccurs="0" />
+							<xs:element name="MarcaID" type="xs:int" minOccurs="0" />
+							<xs:element name="Denominacion" type="xs:string" minOccurs="0" />
+							<xs:element name="ClaseNro" type="xs:string" minOccurs="0" />
+							<xs:element name="Acta" type="xs:string" minOccurs="0" />
+							<xs:element name="Registro" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MarcaVarios">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="ExpedienteRegRenID" type="xs:int" minOccurs="0" />
+							<xs:element name="TramiteID" type="xs:int" minOccurs="0" />
+							<xs:element name="Tramite" type="xs:string" minOccurs="0" />
+							<xs:element name="TramiteSitID" type="xs:int" minOccurs="0" />
+							<xs:element name="TramiteSit" type="xs:string" minOccurs="0" />
+							<xs:element name="ClienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="Cliente" type="xs:string" minOccurs="0" />
+							<xs:element name="ClienteCiudadPais" type="xs:string" minOccurs="0" />
+							<xs:element name="AgenteLocalID" type="xs:int" minOccurs="0" />
+							<xs:element name="AgenteLocal" type="xs:string" minOccurs="0" />
+							<xs:element name="OrdenTrabajoID" type="xs:int" minOccurs="0" />
+							<xs:element name="OrdenTrabajo" type="xs:string" minOccurs="0" />
+							<xs:element name="ActaNro" type="xs:int" minOccurs="0" />
+							<xs:element name="ActaAnio" type="xs:int" minOccurs="0" />
+							<xs:element name="Acta" type="xs:string" minOccurs="0" />
+							<xs:element name="Boletin" type="xs:string" minOccurs="0" />
+							<xs:element name="Concluido" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Obs" type="xs:string" minOccurs="0" />
+							<xs:element name="Nuestra" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Diario" type="xs:string" minOccurs="0" />
+							<xs:element name="Public" type="xs:string" minOccurs="0" />
+							<xs:element name="Documento" type="xs:boolean" minOccurs="0" />
+							<xs:element name="VencimientoFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Limitaciones" type="xs:boolean" minOccurs="0" />
+							<xs:element name="LimitacionesDescrip" type="xs:string" minOccurs="0" />
+							<xs:element name="Exclusivo" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Label" type="xs:string" minOccurs="0" />
+							<xs:element name="BibExp" type="xs:string" minOccurs="0" />
+							<xs:element name="Legalizar" type="xs:boolean" minOccurs="0" />
+							<xs:element name="LegalizarPais" type="xs:string" minOccurs="0" />
+							<xs:element name="EnviarCliente" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Expediente_Situacion">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="TramiteSitID" type="xs:int" minOccurs="0" />
+							<xs:element name="TramiteSit" type="xs:string" minOccurs="0" />
+							<xs:element name="SituacionFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="VencimientoFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Funcionario" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Expediente_PoderdanteOrigen">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="PoderdanteID" type="xs:int" minOccurs="0" />
+							<xs:element name="Denominacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Domicilio" type="xs:string" minOccurs="0" />
+							<xs:element name="Inscripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="Acta" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Expediente_PoderdanteDestino">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="PoderdanteID" type="xs:int" minOccurs="0" />
+							<xs:element name="Denominacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Domicilio" type="xs:string" minOccurs="0" />
+							<xs:element name="Inscripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="Acta" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Expediente_Documento">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="DocumentoID" type="xs:int" minOccurs="0" />
+							<xs:element name="DocumentoTipoID" type="xs:int" minOccurs="0" />
+							<xs:element name="DocumentoTipo" type="xs:string" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Legalizado" type="xs:boolean" minOccurs="0" />
+							<xs:element name="EscPub" type="xs:string" minOccurs="0" />
+							<xs:element name="VencimientoFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Path" type="xs:string" minOccurs="0" />
+							<xs:element name="Identificador" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="MarcaVariosDSKey1">
+			<xs:selector xpath=".//mstns:MarcaRegRen" />
+			<xs:field xpath="mstns:ExpedienteID" />
+		</xs:key>
+		<xs:key name="MarcaVariosDSKey2">
+			<xs:selector xpath=".//mstns:MarcaVarios" />
+			<xs:field xpath="mstns:ExpedienteID" />
+		</xs:key>
+		<xs:keyref name="MarcaRegRenMarcaVarios" refer="MarcaVariosDSKey1">
+			<xs:selector xpath=".//mstns:MarcaVarios" />
+			<xs:field xpath="mstns:ExpedienteRegRenID" />
+		</xs:keyref>
+		<xs:key name="MarcaVariosDSKey3">
+			<xs:selector xpath=".//mstns:Expediente_Situacion" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:keyref name="MarcaVariosExpediente_Situacion" refer="MarcaVariosDSKey2">
+			<xs:selector xpath=".//mstns:Expediente_Situacion" />
+			<xs:field xpath="mstns:ExpedienteID" />
+		</xs:keyref>
+		<xs:key name="MarcaVariosDSKey4">
+			<xs:selector xpath=".//mstns:Expediente_PoderdanteOrigen" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:keyref name="MarcaVariosExpediente_PoderdanteOrigen" refer="MarcaVariosDSKey2">
+			<xs:selector xpath=".//mstns:Expediente_PoderdanteOrigen" />
+			<xs:field xpath="mstns:ExpedienteID" />
+		</xs:keyref>
+		<xs:key name="MarcaVariosDSKey5">
+			<xs:selector xpath=".//mstns:Expediente_PoderdanteDestino" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:keyref name="MarcaVariosExpediente_PoderdanteDestino" refer="MarcaVariosDSKey2">
+			<xs:selector xpath=".//mstns:Expediente_PoderdanteDestino" />
+			<xs:field xpath="mstns:ExpedienteID" />
+		</xs:keyref>
+		<xs:key name="MarcaVariosDSKey6" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Expediente_Documento" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:keyref name="MarcaVariosExpediente_Documento" refer="MarcaVariosDSKey2" msdata:ConstraintOnly="true">
+			<xs:selector xpath=".//mstns:Expediente_Documento" />
+			<xs:field xpath="mstns:ExpedienteID" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

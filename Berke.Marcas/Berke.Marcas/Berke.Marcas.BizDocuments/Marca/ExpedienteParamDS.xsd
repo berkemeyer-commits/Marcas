@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ExpedienteParamDS" targetNamespace="http://tempuri.org/ExpedienteParamDS.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ExpedienteParamDS.xsd"
+	xmlns:mstns="http://tempuri.org/ExpedienteParamDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ExpedienteParamDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ExpedienteParam">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Denominacion" type="xs:string" minOccurs="0" />
+							<xs:element name="ClaseNro" type="xs:int" minOccurs="0" />
+							<xs:element name="ClienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="PertenenciaID" type="xs:int" minOccurs="0" />
+							<xs:element name="NroTipo" type="xs:int" minOccurs="0" />
+							<xs:element name="NroDesde" type="xs:int" minOccurs="0" />
+							<xs:element name="NroHasta" type="xs:int" minOccurs="0" />
+							<xs:element name="NroAnio" type="xs:int" minOccurs="0" />
+							<xs:element name="TramiteID" type="xs:int" minOccurs="0" />
+							<xs:element name="VigenteID" type="xs:int" minOccurs="0" />
+							<xs:element name="RegVtoFecDesde" type="xs:date" minOccurs="0" />
+							<xs:element name="RegVtoFecHasta" type="xs:date" minOccurs="0" />
+							<xs:element name="SoloRegRen" type="xs:boolean" minOccurs="0" />
+							<xs:element name="SituacionIDMin" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Propietario">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PropietarioID" type="xs:int" minOccurs="0" />
+							<xs:element name="PoderdanteID" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

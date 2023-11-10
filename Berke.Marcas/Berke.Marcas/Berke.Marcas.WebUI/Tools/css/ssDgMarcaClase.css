@@ -1,0 +1,56 @@
+.ItemMarcaClaseR
+{
+	font-size:7pt;
+	font-family:Verdana;
+	background-color:whitesmoke;
+	text-align:right;
+	vertical-align:top
+}
+.ItemMarcaClaseRM
+{
+	font-size:7pt;
+	font-family:Verdana;
+	background-color:whitesmoke;
+	text-align:right;
+	vertical-align:middle
+}
+.ItemMarcaClaseL
+{
+	font-size:7pt;
+	font-family:Verdana;
+	background-color:whitesmoke;
+	text-align:left;
+	vertical-align:top
+}
+.ItemMarcaClaseLM
+{
+	font-size:7pt;
+	font-family:Verdana;
+	background-color:whitesmoke;
+	text-align:left;
+	vertical-align:middle
+}
+.ItemMarcaClaseLT
+{
+	font-size:7pt;
+	font-family:Verdana;
+	background-color:whitesmoke;
+	text-align:left;
+	vertical-align:top
+}
+.ItemMarcaClaseCT
+{
+	font-size:7pt;
+	font-family:Verdana;
+	background-color:whitesmoke;
+	text-align:center;
+	vertical-align:top
+}
+.ItemMarcaClaseCM
+{
+	font-size:7pt;
+	font-family:Verdana;
+	background-color:whitesmoke;
+	text-align:center;
+	vertical-align:middle
+}

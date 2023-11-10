@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="MergeListDS" targetNamespace="http://tempuri.org/MergeListDS.xsd" elementFormDefault="qualified"
+	xmlns="http://tempuri.org/MergeListDS.xsd" xmlns:mstns="http://tempuri.org/MergeListDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="MergeList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Expediente_DocumentoTipoID" type="xs:int" />
+				<xs:element name="Descripcion" type="xs:string" />
+				<xs:element name="Funcionario" type="xs:string" />
+				<xs:element name="Generado" type="xs:boolean" />
+				<xs:element name="FechaGenerado" type="xs:date" />
+				<xs:element name="Revisado" type="xs:boolean" />
+				<xs:element name="OK" type="xs:boolean" />
+				<xs:element name="Path" type="xs:string" />
+				<xs:element name="Enviado" type="xs:boolean" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

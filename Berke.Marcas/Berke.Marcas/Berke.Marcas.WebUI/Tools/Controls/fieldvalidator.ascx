@@ -1,0 +1,1 @@
+<%@ Control Language="c#" Inherits="Berke.Marcas.WebUI.Tools.Controls.Migrated_FieldValidator" CodeFile="FieldValidator.ascx.cs" %>

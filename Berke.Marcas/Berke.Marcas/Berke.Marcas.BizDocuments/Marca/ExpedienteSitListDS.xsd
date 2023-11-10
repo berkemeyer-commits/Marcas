@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ExpedienteSitListDS" targetNamespace="http://tempuri.org/ExpedienteSitListDS.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ExpedienteSitListDS.xsd"
+	xmlns:mstns="http://tempuri.org/ExpedienteSitListDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ExpedienteSitListDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ExpedienteSitList">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ExpedienteID" type="xs:int" minOccurs="0" />
+							<xs:element name="MarcaRegRenID" type="xs:int" minOccurs="0" />
+							<xs:element name="Denominacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Clase" type="xs:string" minOccurs="0" />
+							<xs:element name="OrdenTrabajo" type="xs:string" minOccurs="0" />
+							<xs:element name="OrdenTrabajoID" type="xs:int" minOccurs="0" />
+							<xs:element name="OrdenTrabajoNro" type="xs:int" minOccurs="0" />
+							<xs:element name="OrdenTrabajoAnio" type="xs:int" minOccurs="0" />
+							<xs:element name="ActamNro" type="xs:int" minOccurs="0" />
+							<xs:element name="ActamAnio" type="xs:int" minOccurs="0" />
+							<xs:element name="ActaHora" type="xs:int" minOccurs="0" />
+							<xs:element name="ActaMin" type="xs:int" minOccurs="0" />
+							<xs:element name="SituacionFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="VencimientoFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="AgenteLocalID" type="xs:int" minOccurs="0" />
+							<xs:element name="Seleccionado" type="xs:boolean" minOccurs="0" />
+							<xs:element name="TramiteSitID" type="xs:int" minOccurs="0" />
+							<xs:element name="FuncionarioID" type="xs:int" minOccurs="0" />
+							<xs:element name="PublicacionPag" type="xs:int" minOccurs="0" />
+							<xs:element name="PublicacionAnio" type="xs:int" minOccurs="0" />
+							<xs:element name="RegistroNro" type="xs:int" minOccurs="0" />
+							<xs:element name="RegistroAnio" type="xs:int" minOccurs="0" />
+							<xs:element name="RegVtoFecha" type="xs:date" minOccurs="0" />
+							<xs:element name="Carta" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Bib" type="xs:int" minOccurs="0" />
+							<xs:element name="Exp" type="xs:int" minOccurs="0" />
+							<xs:element name="ActavNro" type="xs:int" minOccurs="0" />
+							<xs:element name="ActavAnio" type="xs:int" minOccurs="0" />
+							<xs:element name="SitVtoFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Plazo" type="xs:int" minOccurs="0" />
+							<xs:element name="DiarioID" type="xs:int" minOccurs="0" />
+							<xs:element name="Diario" type="xs:string" minOccurs="0" />
+							<xs:element name="Publicacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Actam" type="xs:string" minOccurs="0" />
+							<xs:element name="Actav" type="xs:string" minOccurs="0" />
+							<xs:element name="Registro" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Usuario">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NomUsuario" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

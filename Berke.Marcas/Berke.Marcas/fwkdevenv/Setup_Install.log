@@ -1,0 +1,162 @@
+prerequirements
+prerequirements-registry
+prerequirements End.
+
+registry
+registry-key_add-HKEY_LOCAL_MACHINE\SOFTWARE\MCS
+registry-key_add-HKEY_LOCAL_MACHINE\SOFTWARE\MCS\Framework
+registry-value_add-HKEY_LOCAL_MACHINE\SOFTWARE\MCS\Framework/ConfigPath
+registry-Key_Value_Add - Key=HKEY_LOCAL_MACHINE\SOFTWARE\MCS\Framework Param=ConfigPath Value=C:\Program Files\fwkdevenv\fwk.config
+registry-value_add-HKEY_LOCAL_MACHINE\SOFTWARE\MCS\Framework/FwkPath
+registry-Key_Value_Add - Key=HKEY_LOCAL_MACHINE\SOFTWARE\MCS\Framework Param=FwkPath Value=C:\Program Files\fwkdevenv
+registry-value_add-HKEY_LOCAL_MACHINE\SOFTWARE\MCS\Framework/NetFrameworkVersion
+registry-Key_Value_Add - Key=HKEY_LOCAL_MACHINE\SOFTWARE\MCS\Framework Param=NetFrameworkVersion Value=1.1
+registry-value_add-HKEY_LOCAL_MACHINE\SOFTWARE\MCS\Framework/VisualStudioVersion
+registry-Key_Value_Add - Key=HKEY_LOCAL_MACHINE\SOFTWARE\MCS\Framework Param=VisualStudioVersion Value=7.1
+registry End.
+
+folders
+folders-folder-C:\Program Files\fwkdevenv\resources
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\resources\mbi-strings-en.resources -to:C:\Program Files\fwkdevenv\resources\mbi-strings-en.resources
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\resources\mbi-strings-es.resources -to:C:\Program Files\fwkdevenv\resources\mbi-strings-es.resources
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\resources\MBI.Web.Strings.en.resources -to:C:\Program Files\fwkdevenv\resources\MBI.Web.Strings.en.resources
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\resources\MBI.Web.Strings.es.resources -to:C:\Program Files\fwkdevenv\resources\MBI.Web.Strings.es.resources
+folders-folder-C:\Program Files\fwkdevenv\samples
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_common\fwksrc\samples\db.fwk.config -to:C:\Program Files\fwkdevenv\samples\db.fwk.config
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_common\fwksrc\samples\file.fwk.config -to:C:\Program Files\fwkdevenv\samples\file.fwk.config
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_common\fwksrc\samples\fwk.config -to:C:\Program Files\fwkdevenv\samples\fwk.config
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_common\fwksrc\samples\Global.asax.cs -to:C:\Program Files\fwkdevenv\samples\Global.asax.cs
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_common\fwksrc\samples\minimal.fwk.config -to:C:\Program Files\fwkdevenv\samples\minimal.fwk.config
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_common\fwksrc\samples\test.vbs -to:C:\Program Files\fwkdevenv\samples\test.vbs
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_common\fwksrc\samples\Web.config -to:C:\Program Files\fwkdevenv\samples\Web.config
+folders-folder-C:\Program Files\fwkdevenv\db
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_common\fwksrc\db\fwk.sql -to:C:\Program Files\fwkdevenv\db\fwk.sql
+folders-folder-C:\Program Files\fwkdevenv\aic
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_common\fwksrc\aic\Framework_AICChannel.asp -to:C:\Program Files\fwkdevenv\aic\Framework_AICChannel.asp
+folders-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_common\fwksrc\aic\Framework_AICChannel_post.asp -to:C:\Program Files\fwkdevenv\aic\Framework_AICChannel_post.asp
+folders-folder-C:\Program Files\fwkdevenv\actions
+folders End.
+
+files
+files-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_common\fwksrc\fwk.config -to:C:\Program Files\fwkdevenv\fwk.config
+files-File_Replaces - from: C:\Program Files\fwkdevenv\fwk.config
+files-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\interop.mscscore.dll -to:C:\Program Files\fwkdevenv\interop.mscscore.dll
+files-gacutil -if interop.mscscore.dll
+-
+Microsoft (R) .NET Global Assembly Cache Utility.  Version 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002. All rights reserved.
+
+Assembly successfully added to the cache
+
+files-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\interop.pipecomplib.dll -to:C:\Program Files\fwkdevenv\interop.pipecomplib.dll
+files-gacutil -if interop.pipecomplib.dll
+-
+Microsoft (R) .NET Global Assembly Cache Utility.  Version 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002. All rights reserved.
+
+Assembly successfully added to the cache
+
+files-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\Microsoft.ApplicationBlocks.Data.xml -to:C:\Program Files\fwkdevenv\Microsoft.ApplicationBlocks.Data.xml
+files-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\Microsoft.ApplicationBlocks.Data.dll -to:C:\Program Files\fwkdevenv\Microsoft.ApplicationBlocks.Data.dll
+files-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\fwkcommon.dll -to:C:\Program Files\fwkdevenv\fwkcommon.dll
+files-gacutil -if fwkcommon.dll
+-
+Microsoft (R) .NET Global Assembly Cache Utility.  Version 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002. All rights reserved.
+
+Assembly successfully added to the cache
+
+files-regasm fwkcommon.dll /tlb:fwkcommon.tlb
+-Microsoft (R) .NET Framework Assembly Registration Utility 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002.  All rights reserved.
+
+Types registered successfully
+Assembly exported to 'C:\Program Files\fwkdevenv\fwkcommon.tlb', and the type library was registered successfully
+
+files-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\fwkclient.dll -to:C:\Program Files\fwkdevenv\fwkclient.dll
+files-gacutil -if fwkclient.dll
+-
+Microsoft (R) .NET Global Assembly Cache Utility.  Version 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002. All rights reserved.
+
+Assembly successfully added to the cache
+
+files-regasm fwkclient.dll /tlb:fwkclient.tlb
+-Microsoft (R) .NET Framework Assembly Registration Utility 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002.  All rights reserved.
+
+Types registered successfully
+Assembly exported to 'C:\Program Files\fwkdevenv\fwkclient.tlb', and the type library was registered successfully
+
+files-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\shmlib.dll -to:C:\Program Files\fwkdevenv\shmlib.dll
+files-gacutil -if shmlib.dll
+-
+Microsoft (R) .NET Global Assembly Cache Utility.  Version 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002. All rights reserved.
+
+Assembly successfully added to the cache
+
+files-regasm shmlib.dll /tlb:shmlib.tlb
+-Microsoft (R) .NET Framework Assembly Registration Utility 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002.  All rights reserved.
+
+Types registered successfully
+Assembly exported to 'C:\Program Files\fwkdevenv\shmlib.tlb', and the type library was registered successfully
+
+files-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\fwkcore.dll -to:C:\Program Files\fwkdevenv\fwkcore.dll
+files-gacutil -if fwkcore.dll
+-
+Microsoft (R) .NET Global Assembly Cache Utility.  Version 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002. All rights reserved.
+
+Assembly successfully added to the cache
+
+files-regasm fwkcore.dll /tlb:fwkcore.tlb
+-Microsoft (R) .NET Framework Assembly Registration Utility 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002.  All rights reserved.
+
+Types registered successfully
+Assembly exported to 'C:\Program Files\fwkdevenv\fwkcore.tlb', and the type library was registered successfully
+
+files-Regsvcs /fc /appname:"Framework Core Library" fwkcore.dll
+-Microsoft (R) .NET Framework Services Installation Utility Version 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002.  All rights reserved.
+
+WARNING: The assembly does not declare an ApplicationAccessControl Attribute.  Application security will be enabled by default.
+Installed Assembly:
+	Assembly: C:\Program Files\fwkdevenv\fwkcore.dll
+	Application: Framework Core Library
+	TypeLib: C:\Program Files\fwkdevenv\fwkcore.tlb
+
+files-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\fwkdata.dll -to:C:\Program Files\fwkdevenv\fwkdata.dll
+files-File_Copy - from:D:\FRAN\MBI_Setup_bin_2.1.0.0\bin\bin_1.1\fwksrc\fwkbtsaic.dll -to:C:\Program Files\fwkdevenv\fwkbtsaic.dll
+files-gacutil -if fwkbtsaic.dll
+-
+Microsoft (R) .NET Global Assembly Cache Utility.  Version 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002. All rights reserved.
+
+Assembly successfully added to the cache
+
+files-regasm fwkbtsaic.dll /tlb:fwkbtsaic.tlb
+-Microsoft (R) .NET Framework Assembly Registration Utility 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002.  All rights reserved.
+
+Types registered successfully
+TlbExp warning: Referenced type is defined in managed component, which is imported from a type library that could not be loaded because it was not registered (type: BizTalk.IPipelineComponent; component: c:\winnt\assembly\gac\interop.pipecomplib\1.0.0.0__5c275b449431085e\interop.pipecomplib.dll).
+TlbExp warning: Referenced type is defined in managed component, which is imported from a type library that could not be loaded because it was not registered (type: BizTalk.IPipelineComponentAdmin; component: c:\winnt\assembly\gac\interop.pipecomplib\1.0.0.0__5c275b449431085e\interop.pipecomplib.dll).
+Assembly exported to 'C:\Program Files\fwkdevenv\fwkbtsaic.tlb', and the type library was registered successfully
+
+files-Regsvcs /fc /appname:"Framework AIC for BizTalk" fwkbtsaic.dll
+-Microsoft (R) .NET Framework Services Installation Utility Version 1.1.4322.573
+Copyright (C) Microsoft Corporation 1998-2002.  All rights reserved.
+
+TlbExp warning: Referenced type is defined in managed component, which is imported from a type library that could not be loaded because it was not registered (type: BizTalk.IPipelineComponent; component: c:\winnt\assembly\gac\interop.pipecomplib\1.0.0.0__5c275b449431085e\interop.pipecomplib.dll).
+TlbExp warning: Referenced type is defined in managed component, which is imported from a type library that could not be loaded because it was not registered (type: BizTalk.IPipelineComponentAdmin; component: c:\winnt\assembly\gac\interop.pipecomplib\1.0.0.0__5c275b449431085e\interop.pipecomplib.dll).
+WARNING: The assembly does not declare an ApplicationAccessControl Attribute.  Application security will be enabled by default.
+Installed Assembly:
+	Assembly: C:\Program Files\fwkdevenv\fwkbtsaic.dll
+	Application: Framework AIC for BizTalk
+	TypeLib: C:\Program Files\fwkdevenv\fwkbtsaic.tlb
+
+files End.
+

@@ -1,0 +1,567 @@
+﻿This report shows the steps taken to convert your Web application from ASP.NET 1.1 to ASP.NET 2.0. 
+There may be some unresolved conversion issues you will need to manually fix. 
+For more information, please refer to http://go.microsoft.com/fwlink/?LinkId=46995 or search for the help topic "Converting from Visual Studio .NET 2002 or 2003".
+Conversion Started on project file Berke.Marcas.WebUI.csproj at August 19 2013, 12:25:02.
+
+=========================ERRORS===================
+
+=========================WARNINGS=================
+Warning: This web project was converted as a file-based web application. If your site contained any IIS meta-information, e.g. sub-folders marked as virtual directories, it is recommended that you close this web site and re-open it using the Open Web Site command and selecting the Local IIS tab.
+
+=========================COMMENTS=================
+Web.Config: Added 'xhtmlConformance' attribute.
+Web.Config: added a reference for assembly fwkclient.
+Web.Config: added a reference for assembly fwkcommon.
+Web.Config: added a reference for assembly fwkcore.
+Web.Config: added a reference for assembly System.Design.
+Web.Config: added a reference for assembly System.Windows.Forms.
+Web.Config: added a reference for assembly Microsoft.mshtml.
+Web.Config: added a reference for assembly System.DirectoryServices.
+Removed attribute Codebehind from file Global.asax.
+Removed attribute AutoEventWireup from file generic\message.aspx.
+Removed attribute Codebehind from file generic\message.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file generic\Message.aspx.cs (Line 20).
+Removed attribute AutoEventWireup from file generic\navigator.aspx.
+Removed attribute Codebehind from file generic\navigator.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file generic\Navigator.aspx.cs (Line 22).
+Removed attribute AutoEventWireup from file home\agentelocalconsulta.aspx.
+Removed attribute Codebehind from file home\agentelocalconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\AgenteLocalConsulta.aspx.cs (Line 29).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\AgenteLocalConsulta.aspx.cs (Line 50).
+Removed attribute AutoEventWireup from file home\atencionesxmarca.aspx.
+Removed attribute Codebehind from file home\atencionesxmarca.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\AtencionesxMarca.aspx.cs (Line 41).
+Removed attribute AutoEventWireup from file home\atencionxvia.aspx.
+Removed attribute Codebehind from file home\atencionxvia.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\AtencionXVia.aspx.cs (Line 70).
+Removed attribute AutoEventWireup from file home\avisoconsulta.aspx.
+Removed attribute Codebehind from file home\avisoconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\AvisoConsulta.aspx.cs (Line 103).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\AvisoConsulta.aspx.cs (Line 139).
+Warning: Access level of 'btnAtender_Click' changed to 'protected' in file home\AvisoConsulta.aspx.cs (Line 359).
+Warning: Access level of 'btnMarcar_Click' changed to 'protected' in file home\AvisoConsulta.aspx.cs (Line 367).
+Warning: Access level of 'btnMostrarFiltro_Click' changed to 'protected' in file home\AvisoConsulta.aspx.cs (Line 377).
+Removed attribute AutoEventWireup from file home\avisodetalle.aspx.
+Removed attribute Codebehind from file home\avisodetalle.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\AvisoDetalle.aspx.cs (Line 267).
+Warning: Access level of 'btnDerivar_Click' changed to 'protected' in file home\AvisoDetalle.aspx.cs (Line 320).
+Removed attribute AutoEventWireup from file home\avisoingresar.aspx.
+Removed attribute Codebehind from file home\avisoingresar.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\AvisoIngresar.aspx.cs (Line 52).
+Warning: Access level of 'btGrabar_Click' changed to 'protected' in file home\AvisoIngresar.aspx.cs (Line 83).
+Removed attribute AutoEventWireup from file home\cambiocliente.aspx.
+Removed attribute Codebehind from file home\cambiocliente.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\CambioCliente.aspx.cs (Line 27).
+Warning: Access level of 'btnAsignarMarcas_Click' changed to 'protected' in file home\CambioCliente.aspx.cs (Line 65).
+Warning: Access level of 'btnVolverMarcas_Click' changed to 'protected' in file home\CambioCliente.aspx.cs (Line 136).
+Warning: Access level of 'btnGrabar_Click' changed to 'protected' in file home\CambioCliente.aspx.cs (Line 204).
+Warning: Access level of 'btnSalir_Click' changed to 'protected' in file home\CambioCliente.aspx.cs (Line 261).
+Warning: Access level of 'bConfirmar_Click' changed to 'protected' in file home\CambioCliente.aspx.cs (Line 296).
+Warning: Access level of 'bVerificar_Click' changed to 'protected' in file home\CambioCliente.aspx.cs (Line 338).
+Removed attribute AutoEventWireup from file home\cambioclientetvs.aspx.
+Removed attribute Codebehind from file home\cambioclientetvs.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\CambioClienteTVS.aspx.cs (Line 27).
+Warning: Access level of 'btnAsignarMarcas_Click' changed to 'protected' in file home\CambioClienteTVS.aspx.cs (Line 63).
+Warning: Access level of 'btnVolverMarcas_Click' changed to 'protected' in file home\CambioClienteTVS.aspx.cs (Line 134).
+Warning: Access level of 'btnGrabar_Click' changed to 'protected' in file home\CambioClienteTVS.aspx.cs (Line 202).
+Warning: Access level of 'btnSalir_Click' changed to 'protected' in file home\CambioClienteTVS.aspx.cs (Line 259).
+Warning: Access level of 'bConfirmar_Click' changed to 'protected' in file home\CambioClienteTVS.aspx.cs (Line 294).
+Warning: Access level of 'bVerificar_Click' changed to 'protected' in file home\CambioClienteTVS.aspx.cs (Line 336).
+Removed attribute AutoEventWireup from file home\cambioestado.aspx.
+Removed attribute Codebehind from file home\cambioestado.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\CambioEstado.aspx.cs (Line 153).
+Warning: Access level of 'ddlOperacion_SelectedIndexChanged' changed to 'protected' in file home\CambioEstado.aspx.cs (Line 557).
+Warning: Access level of 'btnGrabar_Click' changed to 'protected' in file home\CambioEstado.aspx.cs (Line 704).
+Warning: Access level of 'btnBuscar_Click' changed to 'protected' in file home\CambioEstado.aspx.cs (Line 1644).
+Removed attribute AutoEventWireup from file home\claseclaseconsulta.aspx.
+Removed attribute Codebehind from file home\claseclaseconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ClaseClaseConsulta.aspx.cs (Line 68).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\ClaseClaseConsulta.aspx.cs (Line 91).
+Removed attribute AutoEventWireup from file home\claseconsulta.aspx.
+Removed attribute Codebehind from file home\claseconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ClaseConsulta.aspx.cs (Line 53).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\ClaseConsulta.aspx.cs (Line 76).
+Removed attribute AutoEventWireup from file home\claseidioma.aspx.
+Removed attribute Codebehind from file home\claseidioma.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ClaseIdioma.aspx.cs (Line 41).
+Removed attribute AutoEventWireup from file home\claseselec.aspx.
+Removed attribute Codebehind from file home\claseselec.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ClaseSelec.aspx.cs (Line 47).
+Warning: Access level of 'btnCerrar_Click' changed to 'protected' in file home\ClaseSelec.aspx.cs (Line 184).
+Warning: Access level of 'btnMarcar_Click' changed to 'protected' in file home\ClaseSelec.aspx.cs (Line 222).
+Removed attribute AutoEventWireup from file home\clienteconsulta.aspx.
+Removed attribute Codebehind from file home\clienteconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ClienteConsulta.aspx.cs (Line 31).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\ClienteConsulta.aspx.cs (Line 52).
+Removed attribute AutoEventWireup from file home\clientedatos.aspx.
+Removed attribute Codebehind from file home\clientedatos.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ClienteDatos.aspx.cs (Line 48).
+Removed attribute AutoEventWireup from file home\correspconsulta.aspx.
+Removed attribute Codebehind from file home\correspconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\CorrespConsulta.aspx.cs (Line 358).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\CorrespConsulta.aspx.cs (Line 382).
+Warning: Access level of 'btnAsignar_Click' changed to 'protected' in file home\CorrespConsulta.aspx.cs (Line 577).
+Warning: Access level of 'chkMarcar_CheckedChanged' changed to 'protected' in file home\CorrespConsulta.aspx.cs (Line 615).
+Warning: Access level of 'btnAsignacion_Click' changed to 'protected' in file home\CorrespConsulta.aspx.cs (Line 639).
+Warning: Access level of 'btnGrabar_Click' changed to 'protected' in file home\CorrespConsulta.aspx.cs (Line 660).
+Warning: Access level of 'btnProcesado_Click' changed to 'protected' in file home\CorrespConsulta.aspx.cs (Line 744).
+Warning: Access level of 'btnGrabarProcesado_Click' changed to 'protected' in file home\CorrespConsulta.aspx.cs (Line 765).
+Warning: Access level of 'ddlArea_SelectedIndexChanged' changed to 'protected' in file home\CorrespConsulta.aspx.cs (Line 770).
+Warning: Access level of 'ddlAreaAsignacion_SelectedIndexChanged' changed to 'protected' in file home\CorrespConsulta.aspx.cs (Line 820).
+Warning: Access level of 'btnGenDoc_Click' changed to 'protected' in file home\CorrespConsulta.aspx.cs (Line 852).
+Warning: Access level of 'btnGenXls_Click' changed to 'protected' in file home\CorrespConsulta.aspx.cs (Line 871).
+Removed attribute AutoEventWireup from file home\detallehojadescriptiva.aspx.
+Removed attribute Codebehind from file home\detallehojadescriptiva.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\DetalleHojaDescriptiva.aspx.cs (Line 27).
+'Reference' tag with reference to '~/home/imagen.aspx' added to file home\detallehojadescriptiva.aspx.
+Warning: Access level of 'btnImprimir_Click' changed to 'protected' in file home\DetalleHojaDescriptiva.aspx.cs (Line 168).
+Removed attribute AutoEventWireup from file home\diarioconsulta.aspx.
+Removed attribute Codebehind from file home\diarioconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\DiarioConsulta.aspx.cs (Line 27).
+Removed attribute AutoEventWireup from file home\documentoconsulta.aspx.
+Removed attribute Codebehind from file home\documentoconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\DocumentoConsulta.aspx.cs (Line 64).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\DocumentoConsulta.aspx.cs (Line 87).
+Removed attribute AutoEventWireup from file home\documentotipoconsulta.aspx.
+Removed attribute Codebehind from file home\documentotipoconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\DocumentoTipoConsulta.aspx.cs (Line 42).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\DocumentoTipoConsulta.aspx.cs (Line 65).
+Removed attribute AutoEventWireup from file home\eliminarinstruccion.aspx.
+Removed attribute Codebehind from file home\eliminarinstruccion.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\EliminarInstruccion.aspx.cs (Line 96).
+Warning: Access level of 'txtBuscar_Click' changed to 'protected' in file home\EliminarInstruccion.aspx.cs (Line 174).
+Warning: Access level of 'btnEliminarInstruccion_Click_1' changed to 'protected' in file home\EliminarInstruccion.aspx.cs (Line 456).
+Removed attribute TargetSchema from file home\expedatos.ascx.
+Removed attribute Codebehind from file home\expedatos.ascx.
+Removed attribute AutoEventWireup from file home\expedatos.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ExpeDatos.ascx.cs (Line 16).
+Removed attribute AutoEventWireup from file home\expedientecambiosit.aspx.
+Removed attribute Codebehind from file home\expedientecambiosit.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ExpedienteCambioSit.aspx.cs (Line 116).
+Warning: Access level of 'btnBuscar_Click' changed to 'protected' in file home\ExpedienteCambioSit.aspx.cs (Line 249).
+Warning: Access level of 'btnRecalcVencim_Click' changed to 'protected' in file home\ExpedienteCambioSit.aspx.cs (Line 353).
+Warning: Access level of 'btnCancelar_Click' changed to 'protected' in file home\ExpedienteCambioSit.aspx.cs (Line 379).
+Warning: Access level of 'btnAceptar_Click' changed to 'protected' in file home\ExpedienteCambioSit.aspx.cs (Line 386).
+Warning: Access level of 'btnRecalcVencimReg_Click' changed to 'protected' in file home\ExpedienteCambioSit.aspx.cs (Line 590).
+Removed attribute AutoEventWireup from file home\expedocingresar.aspx.
+Removed attribute Codebehind from file home\expedocingresar.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ExpeDocIngresar.aspx.cs (Line 101).
+Warning: Access level of 'txtBuscar_Click' changed to 'protected' in file home\ExpeDocIngresar.aspx.cs (Line 190).
+Warning: Access level of 'btnAceptar_Click' changed to 'protected' in file home\ExpeDocIngresar.aspx.cs (Line 374).
+Warning: Access level of 'btnCheckCorresp_Click' changed to 'protected' in file home\ExpeDocIngresar.aspx.cs (Line 490).
+Warning: Access level of 'btnEliminarInstruccion_Click_1' changed to 'protected' in file home\ExpeDocIngresar.aspx.cs (Line 651).
+Removed attribute AutoEventWireup from file home\expemarcacambioestado.aspx.
+Removed attribute Codebehind from file home\expemarcacambioestado.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ExpeMarcaCambioEstado.aspx.cs (Line 135).
+Warning: Access level of 'txtBuscar_Click' changed to 'protected' in file home\ExpeMarcaCambioEstado.aspx.cs (Line 213).
+Warning: Access level of 'ddlOperacion_SelectedIndexChanged' changed to 'protected' in file home\ExpeMarcaCambioEstado.aspx.cs (Line 409).
+Warning: Access level of 'btnGrabar_Click' changed to 'protected' in file home\ExpeMarcaCambioEstado.aspx.cs (Line 550).
+Removed attribute AutoEventWireup from file home\expemarcacambiosit.aspx.
+Removed attribute Codebehind from file home\expemarcacambiosit.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ExpeMarcaCambioSit.aspx.cs (Line 131).
+Warning: Access level of 'btnBuscar_Click' changed to 'protected' in file home\ExpeMarcaCambioSit.aspx.cs (Line 217).
+Warning: Access level of 'btnGrabar_Click' changed to 'protected' in file home\ExpeMarcaCambioSit.aspx.cs (Line 1086).
+Warning: Access level of 'btnReplicar_Click' changed to 'protected' in file home\ExpeMarcaCambioSit.aspx.cs (Line 1118).
+Warning: Access level of 'ddlReplicar_SelectedIndexChanged' changed to 'protected' in file home\ExpeMarcaCambioSit.aspx.cs (Line 1171).
+Warning: Access level of 'btnCalcVencim_Click' changed to 'protected' in file home\ExpeMarcaCambioSit.aspx.cs (Line 1449).
+Removed attribute AutoEventWireup from file home\expemarcacambiositconsulta.aspx.
+Removed attribute Codebehind from file home\expemarcacambiositconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ExpeMarcaCambioSitConsulta.aspx.cs (Line 95).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\ExpeMarcaCambioSitConsulta.aspx.cs (Line 394).
+Warning: Access level of 'btnGenDocum_Click' changed to 'protected' in file home\ExpeMarcaCambioSitConsulta.aspx.cs (Line 499).
+Removed attribute AutoEventWireup from file home\expemarcaconsultar.aspx.
+Removed attribute Codebehind from file home\expemarcaconsultar.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ExpeMarcaConsultar.aspx.cs (Line 122).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\ExpeMarcaConsultar.aspx.cs (Line 380).
+Warning: Access level of 'btnGenDoc_Click' changed to 'protected' in file home\ExpeMarcaConsultar.aspx.cs (Line 1202).
+Warning: Access level of 'btnGenXls_Click' changed to 'protected' in file home\ExpeMarcaConsultar.aspx.cs (Line 1216).
+Removed attribute AutoEventWireup from file home\expemarcaconsultarlitigio.aspx.
+Removed attribute Codebehind from file home\expemarcaconsultarlitigio.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ExpeMarcaConsultarLitigio.aspx.cs (Line 85).
+Warning: Access level of 'dgResult_SelectedIndexChanged' changed to 'protected' in file home\ExpeMarcaConsultarLitigio.aspx.cs (Line 630).
+Warning: Access level of 'btnMarcarDes_Click' changed to 'protected' in file home\ExpeMarcaConsultarLitigio.aspx.cs (Line 874).
+Warning: Access level of 'Button1_Click' changed to 'protected' in file home\ExpeMarcaConsultarLitigio.aspx.cs (Line 894).
+Removed attribute AutoEventWireup from file home\exportargrillacorresp.aspx.
+Removed attribute Codebehind from file home\exportargrillacorresp.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ExportarGrillaCorresp.aspx.cs (Line 20).
+Removed attribute AutoEventWireup from file home\funcionarioconsulta.aspx.
+Removed attribute Codebehind from file home\funcionarioconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\FuncionarioConsulta.aspx.cs (Line 47).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\FuncionarioConsulta.aspx.cs (Line 70).
+Removed attribute AutoEventWireup from file home\hdesctramvarios.aspx.
+Removed attribute Codebehind from file home\hdesctramvarios.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\HDescTramVarios.aspx.cs (Line 49).
+Warning: Access level of 'btnImprimir_Click' changed to 'protected' in file home\HDescTramVarios.aspx.cs (Line 650).
+Removed attribute AutoEventWireup from file home\hiconsulta.aspx.
+Removed attribute Codebehind from file home\hiconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\HIConsulta.aspx.cs (Line 48).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\HIConsulta.aspx.cs (Line 71).
+'Reference' tag with reference to '~/home/tramitesvarios.aspx' added to file home\hiconsulta.aspx.
+Removed attribute AutoEventWireup from file home\hiregistromarcas.aspx.
+Removed attribute Codebehind from file home\hiregistromarcas.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\HIRegistroMarcas.aspx.cs (Line 98).
+Warning: Access level of 'GridMarcas1_SelectedIndexChanged' changed to 'protected' in file home\HIRegistroMarcas.aspx.cs (Line 1453).
+Removed attribute AutoEventWireup from file home\historico.aspx.
+Removed attribute Codebehind from file home\historico.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\Historico.aspx.cs (Line 27).
+Removed attribute AutoEventWireup from file home\imagen.aspx.
+Removed attribute Codebehind from file home\imagen.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\Imagen.aspx.cs (Line 26).
+Removed attribute AutoEventWireup from file home\ingresarledes1998bi.aspx.
+Removed attribute Codebehind from file home\ingresarledes1998bi.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\IngresarLedes1998BI.aspx.cs (Line 75).
+Warning: Access level of 'btnGrabar_Click' changed to 'protected' in file home\IngresarLedes1998BI.aspx.cs (Line 240).
+Warning: Access level of 'btnEliminarDetalle_Click' changed to 'protected' in file home\IngresarLedes1998BI.aspx.cs (Line 547).
+Warning: Access level of 'btnConfirmar_Click' changed to 'protected' in file home\IngresarLedes1998BI.aspx.cs (Line 604).
+Warning: Access level of 'btnAnular_Click' changed to 'protected' in file home\IngresarLedes1998BI.aspx.cs (Line 949).
+Warning: Access level of 'btnGenerarArchivo_Click' changed to 'protected' in file home\IngresarLedes1998BI.aspx.cs (Line 1017).
+Warning: Access level of 'btnNuevo_Click' changed to 'protected' in file home\IngresarLedes1998BI.aspx.cs (Line 1177).
+Warning: Access level of 'GridLedesDetalle_SelectedIndexChanged' changed to 'protected' in file home\IngresarLedes1998BI.aspx.cs (Line 1184).
+Removed attribute AutoEventWireup from file home\instruccioningresar.aspx.
+Removed attribute Codebehind from file home\instruccioningresar.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\InstruccionIngresar.aspx.cs (Line 93).
+Warning: Access level of 'btnCheckCorresp_Click' changed to 'protected' in file home\InstruccionIngresar.aspx.cs (Line 122).
+Warning: Access level of 'btnCheckMarcas_Click' changed to 'protected' in file home\InstruccionIngresar.aspx.cs (Line 210).
+Warning: Access level of 'btnAceptar_Click' changed to 'protected' in file home\InstruccionIngresar.aspx.cs (Line 594).
+Removed attribute AutoEventWireup from file home\instrucciontipo.aspx.
+Removed attribute Codebehind from file home\instrucciontipo.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\InstruccionTipo.aspx.cs (Line 24).
+Removed attribute AutoEventWireup from file home\ledesconsulta.aspx.
+Removed attribute Codebehind from file home\ledesconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\LedesConsulta.aspx.cs (Line 23).
+Warning: Access level of 'btnBuscar_Click' changed to 'protected' in file home\LedesConsulta.aspx.cs (Line 47).
+Removed attribute AutoEventWireup from file home\ledesingresar.aspx.
+Removed attribute Codebehind from file home\ledesingresar.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\LedesIngresar.aspx.cs (Line 69).
+Warning: Access level of 'btnGrabar_Click' changed to 'protected' in file home\LedesIngresar.aspx.cs (Line 207).
+Warning: Access level of 'btnEliminarDetalle_Click' changed to 'protected' in file home\LedesIngresar.aspx.cs (Line 390).
+Warning: Access level of 'btnConfirmar_Click' changed to 'protected' in file home\LedesIngresar.aspx.cs (Line 446).
+Warning: Access level of 'btnAnular_Click' changed to 'protected' in file home\LedesIngresar.aspx.cs (Line 647).
+Warning: Access level of 'btnGenerarArchivo_Click' changed to 'protected' in file home\LedesIngresar.aspx.cs (Line 712).
+Warning: Access level of 'btnNuevo_Click' changed to 'protected' in file home\LedesIngresar.aspx.cs (Line 820).
+Removed attribute AutoEventWireup from file home\limitaciones.aspx.
+Removed attribute Codebehind from file home\limitaciones.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\Limitaciones.aspx.cs (Line 31).
+Warning: Access level of 'btnAtras_Click' changed to 'protected' in file home\Limitaciones.aspx.cs (Line 93).
+Warning: Access level of 'lnkGuardar_Click' changed to 'protected' in file home\Limitaciones.aspx.cs (Line 113).
+Warning: Access level of 'txtClaseDescrip_TextChanged' changed to 'protected' in file home\Limitaciones.aspx.cs (Line 121).
+Removed attribute AutoEventWireup from file home\limitada.aspx.
+Removed attribute Codebehind from file home\limitada.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\Limitada.aspx.cs (Line 20).
+Warning: Access level of 'lnkGuardar_Click' changed to 'protected' in file home\Limitada.aspx.cs (Line 47).
+Warning: Access level of 'btnAtras_Click' changed to 'protected' in file home\Limitada.aspx.cs (Line 55).
+Removed attribute AutoEventWireup from file home\login.aspx.
+Removed attribute Codebehind from file home\login.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\Login.aspx.cs (Line 23).
+Removed attribute AutoEventWireup from file home\logotiposelec.aspx.
+Removed attribute Codebehind from file home\logotiposelec.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\LogotipoSelec.aspx.cs (Line 29).
+Warning: Access level of 'btnBuscar_Click' changed to 'protected' in file home\LogotipoSelec.aspx.cs (Line 90).
+Warning: Access level of 'btnVerLogotipo_Click' changed to 'protected' in file home\LogotipoSelec.aspx.cs (Line 120).
+Warning: Access level of 'btnCerrar_Click' changed to 'protected' in file home\LogotipoSelec.aspx.cs (Line 137).
+Removed attribute AutoEventWireup from file home\marcadetallel.aspx.
+Removed attribute Codebehind from file home\marcadetallel.aspx.
+'Reference' tag with reference to '~/home/cambioestado.aspx' added to file home\marcadetallel.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\MarcaDetalleL.aspx.cs (Line 129).
+Warning: Access level of 'lnkJerarquia_Click' changed to 'protected' in file home\MarcaDetalleL.aspx.cs (Line 176).
+Warning: Access level of 'Linkbutton1_Click' changed to 'protected' in file home\MarcaDetalleL.aspx.cs (Line 518).
+Warning: Access level of 'lnkCorresp_Click' changed to 'protected' in file home\MarcaDetalleL.aspx.cs (Line 526).
+Warning: Access level of 'lnkCambioCLiente_Click' changed to 'protected' in file home\MarcaDetalleL.aspx.cs (Line 841).
+Warning: Access level of 'btnEliminar_Click' changed to 'protected' in file home\MarcaDetalleL.aspx.cs (Line 915).
+Warning: Access level of 'lnkEliminar_Click' changed to 'protected' in file home\MarcaDetalleL.aspx.cs (Line 1045).
+Warning: Access level of 'lnkBoletin_Click' changed to 'protected' in file home\MarcaDetalleL.aspx.cs (Line 1060).
+Removed attribute AutoEventWireup from file home\marcadetallelitigios.aspx.
+Removed attribute Codebehind from file home\marcadetallelitigios.aspx.
+'Reference' tag with reference to '~/home/cambioestado.aspx' added to file home\marcadetallelitigios.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\MarcaDetalleLitigios.aspx.cs (Line 112).
+Warning: Access level of 'lnkJerarquia_Click' changed to 'protected' in file home\MarcaDetalleLitigios.aspx.cs (Line 159).
+Warning: Access level of 'Linkbutton1_Click' changed to 'protected' in file home\MarcaDetalleLitigios.aspx.cs (Line 513).
+Warning: Access level of 'lnkCorresp_Click' changed to 'protected' in file home\MarcaDetalleLitigios.aspx.cs (Line 521).
+Warning: Access level of 'lnkCambioCLiente_Click' changed to 'protected' in file home\MarcaDetalleLitigios.aspx.cs (Line 732).
+Warning: Access level of 'btnEliminar_Click' changed to 'protected' in file home\MarcaDetalleLitigios.aspx.cs (Line 806).
+Warning: Access level of 'lnkBoletin_Click' changed to 'protected' in file home\MarcaDetalleLitigios.aspx.cs (Line 951).
+Removed attribute AutoEventWireup from file home\marcamodif.aspx.
+Removed attribute Codebehind from file home\marcamodif.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\MarcaModif.aspx.cs (Line 405).
+Warning: Access level of 'btnGrabar_Click' changed to 'protected' in file home\MarcaModif.aspx.cs (Line 450).
+'Reference' tag with reference to '~/home/limitada.aspx' added to file home\marcamodif.aspx.
+Removed attribute AutoEventWireup from file home\modsitconcedgeneral.aspx.
+Removed attribute Codebehind from file home\modsitconcedgeneral.aspx.
+Reference to code-behind class 'Berke.Marcas.WebUI.Home.ModSitConcedGeneral' has been found in the file 'home\ModSitConcedGeneral.aspx.cs' at line '18'. A stub class for 'Berke.Marcas.WebUI.Home.ModSitConcedGeneral' will be generated in 'App_Code\Migrated' folder.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ModSitConcedGeneral.aspx.cs (Line 20).
+Warning: Access level of 'btnGrabar_Click' changed to 'protected' in file home\ModSitConcedGeneral.aspx.cs (Line 44).
+Removed attribute AutoEventWireup from file home\notificacionconsulta.aspx.
+Removed attribute Codebehind from file home\notificacionconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\NotificacionConsulta.aspx.cs (Line 50).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\NotificacionConsulta.aspx.cs (Line 73).
+Warning: Access level of 'btnAgregar_Click' changed to 'protected' in file home\NotificacionConsulta.aspx.cs (Line 169).
+Removed attribute AutoEventWireup from file home\notificaciondetalle.aspx.
+Removed attribute Codebehind from file home\notificaciondetalle.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\NotificacionDetalle.aspx.cs (Line 122).
+Warning: Access level of 'btnAgregar_Click' changed to 'protected' in file home\NotificacionDetalle.aspx.cs (Line 304).
+Warning: Access level of 'btnModificar_Click' changed to 'protected' in file home\NotificacionDetalle.aspx.cs (Line 309).
+Warning: Access level of 'btnEliminar_Click' changed to 'protected' in file home\NotificacionDetalle.aspx.cs (Line 314).
+Warning: Access level of 'btnCancelar_Click' changed to 'protected' in file home\NotificacionDetalle.aspx.cs (Line 321).
+Warning: Access level of 'btnConfirmar_Click' changed to 'protected' in file home\NotificacionDetalle.aspx.cs (Line 335).
+Warning: Access level of 'btnVolver_Click' changed to 'protected' in file home\NotificacionDetalle.aspx.cs (Line 402).
+Removed attribute AutoEventWireup from file home\ordentrabajodetalle.aspx.
+Removed attribute Codebehind from file home\ordentrabajodetalle.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\OrdenTrabajoDetalle.aspx.cs (Line 33).
+Warning: Access level of 'btnEliminar_Click' changed to 'protected' in file home\OrdenTrabajoDetalle.aspx.cs (Line 388).
+Warning: Access level of 'btnSalir_Click' changed to 'protected' in file home\OrdenTrabajoDetalle.aspx.cs (Line 412).
+Removed attribute AutoEventWireup from file home\otmarcaconsulta.aspx.
+Removed attribute Codebehind from file home\otmarcaconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\OtMarcaConsulta.aspx.cs (Line 123).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\OtMarcaConsulta.aspx.cs (Line 155).
+'Reference' tag with reference to '~/home/tramitesvarios.aspx' added to file home\otmarcaconsulta.aspx.
+Removed attribute AutoEventWireup from file home\poderconsulta.aspx.
+Removed attribute Codebehind from file home\poderconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\PoderConsulta.aspx.cs (Line 66).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\PoderConsulta.aspx.cs (Line 97).
+Removed attribute AutoEventWireup from file home\poderdatos.aspx.
+Removed attribute Codebehind from file home\poderdatos.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\PoderDatos.aspx.cs (Line 35).
+Removed attribute AutoEventWireup from file home\podersitame.aspx.
+Removed attribute Codebehind from file home\podersitame.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\PoderSitAME.aspx.cs (Line 23).
+Removed attribute AutoEventWireup from file home\procesoconsulta.aspx.
+Removed attribute Codebehind from file home\procesoconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ProcesoConsulta.aspx.cs (Line 48).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\ProcesoConsulta.aspx.cs (Line 71).
+Removed attribute AutoEventWireup from file home\propietarioconsulta.aspx.
+Removed attribute Codebehind from file home\propietarioconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\PropietarioConsulta.aspx.cs (Line 42).
+Warning: Access level of 'btBuscar_Click_1' changed to 'protected' in file home\PropietarioConsulta.aspx.cs (Line 85).
+Removed attribute AutoEventWireup from file home\propietariodatos.aspx.
+Removed attribute Codebehind from file home\propietariodatos.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\PropietarioDatos.aspx.cs (Line 45).
+Removed attribute AutoEventWireup from file home\regaduana.aspx.
+Removed attribute Codebehind from file home\regaduana.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\RegAduana.aspx.cs (Line 65).
+Warning: Access level of 'BntGrabar_Click' changed to 'protected' in file home\RegAduana.aspx.cs (Line 493).
+Warning: Access level of 'BntMarcasGrabar_Click' changed to 'protected' in file home\RegAduana.aspx.cs (Line 728).
+'Reference' tag with reference to '~/home/renovacion.aspx' added to file home\regaduana.aspx.
+Removed attribute AutoEventWireup from file home\regaduanadetalle.aspx.
+Removed attribute Codebehind from file home\regaduanadetalle.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\RegAduanaDetalle.aspx.cs (Line 33).
+Warning: Access level of 'BntGrabar_Click' changed to 'protected' in file home\RegAduanaDetalle.aspx.cs (Line 225).
+Warning: Access level of 'btnEliminar_Click' changed to 'protected' in file home\RegAduanaDetalle.aspx.cs (Line 285).
+Removed attribute AutoEventWireup from file home\renovacion.aspx.
+Removed attribute Codebehind from file home\renovacion.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\Renovacion.aspx.cs (Line 61).
+Warning: Access level of 'BntGrabar_Click' changed to 'protected' in file home\Renovacion.aspx.cs (Line 464).
+Removed attribute AutoEventWireup from file home\renovaciondetalle.aspx.
+Removed attribute Codebehind from file home\renovaciondetalle.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\RenovacionDetalle.aspx.cs (Line 33).
+Warning: Access level of 'BntGrabar_Click' changed to 'protected' in file home\RenovacionDetalle.aspx.cs (Line 225).
+Warning: Access level of 'btnEliminar_Click' changed to 'protected' in file home\RenovacionDetalle.aspx.cs (Line 285).
+Removed attribute AutoEventWireup from file home\rep_38.aspx.
+Removed attribute Codebehind from file home\rep_38.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\Rep_38.aspx.cs (Line 58).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\Rep_38.aspx.cs (Line 132).
+Removed attribute AutoEventWireup from file home\rep_39.aspx.
+Removed attribute Codebehind from file home\rep_39.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\REP_39.aspx.cs (Line 68).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\REP_39.aspx.cs (Line 149).
+Removed attribute AutoEventWireup from file home\rep_41.aspx.
+Removed attribute Codebehind from file home\rep_41.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\Rep_41.aspx.cs (Line 64).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\Rep_41.aspx.cs (Line 96).
+Removed attribute AutoEventWireup from file home\rep_42.aspx.
+Removed attribute Codebehind from file home\rep_42.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\Rep_42.aspx.cs (Line 55).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\Rep_42.aspx.cs (Line 132).
+'Reference' tag with reference to '~/home/instrucciontipo.aspx' added to file home\rep_42.aspx.
+Removed attribute AutoEventWireup from file home\rep_43.aspx.
+Removed attribute Codebehind from file home\rep_43.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\Rep_43.aspx.cs (Line 54).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\Rep_43.aspx.cs (Line 131).
+Removed attribute AutoEventWireup from file home\repboletingeneral.aspx.
+Removed attribute Codebehind from file home\repboletingeneral.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\repBoletinGeneral.aspx.cs (Line 49).
+Warning: Access level of 'btnGenerar_Click' changed to 'protected' in file home\repBoletinGeneral.aspx.cs (Line 464).
+Warning: Access level of 'btnGenExcel_Click' changed to 'protected' in file home\repBoletinGeneral.aspx.cs (Line 520).
+Warning: Access level of 'lbtnAgBerke_Click' changed to 'protected' in file home\repBoletinGeneral.aspx.cs (Line 742).
+Warning: Access level of 'btnTrSug_Click' changed to 'protected' in file home\repBoletinGeneral.aspx.cs (Line 781).
+Removed attribute AutoEventWireup from file home\repbusqfon.aspx.
+Removed attribute Codebehind from file home\repbusqfon.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\repBusqFon.aspx.cs (Line 19).
+Removed attribute AutoEventWireup from file home\repexpedientepertenencia.aspx.
+Removed attribute Codebehind from file home\repexpedientepertenencia.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\repExpedientePertenencia.aspx.cs (Line 41).
+Warning: Access level of 'btnGenerar_Click' changed to 'protected' in file home\repExpedientePertenencia.aspx.cs (Line 123).
+Warning: Access level of 'btnGenExcel_Click' changed to 'protected' in file home\repExpedientePertenencia.aspx.cs (Line 280).
+Removed attribute AutoEventWireup from file home\repinstruccion.aspx.
+Removed attribute Codebehind from file home\repinstruccion.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\repInstruccion.aspx.cs (Line 43).
+Warning: Access level of 'btnGenerar_Click' changed to 'protected' in file home\repInstruccion.aspx.cs (Line 143).
+Warning: Access level of 'btnGenExcel_Click' changed to 'protected' in file home\repInstruccion.aspx.cs (Line 288).
+Warning: Access level of 'btnContar_Click' changed to 'protected' in file home\repInstruccion.aspx.cs (Line 337).
+Removed attribute AutoEventWireup from file home\repma_r_36.aspx.
+Removed attribute Codebehind from file home\repma_r_36.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\repMA_R_36.aspx.cs (Line 54).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\repMA_R_36.aspx.cs (Line 151).
+Removed attribute AutoEventWireup from file home\repma_r_56.aspx.
+Removed attribute Codebehind from file home\repma_r_56.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\repMA_R_56.aspx.cs (Line 68).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\repMA_R_56.aspx.cs (Line 148).
+Removed attribute AutoEventWireup from file home\repmarcaspropiastramite.aspx.
+Removed attribute Codebehind from file home\repmarcaspropiastramite.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\RepMarcasPropiasTramite.aspx.cs (Line 61).
+Warning: Access level of 'BtnGenerar_Click' changed to 'protected' in file home\RepMarcasPropiasTramite.aspx.cs (Line 86).
+Removed attribute AutoEventWireup from file home\repmarcastramites.aspx.
+Removed attribute Codebehind from file home\repmarcastramites.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\RepMarcasTramites.aspx.cs (Line 24).
+Warning: Access level of 'BtnGenerar_Click_1' changed to 'protected' in file home\RepMarcasTramites.aspx.cs (Line 225).
+Removed attribute AutoEventWireup from file home\repordenpublicacion.aspx.
+Removed attribute Codebehind from file home\repordenpublicacion.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\RepOrdenPublicacion.aspx.cs (Line 33).
+Warning: Access level of 'btnGenerar_Click' changed to 'protected' in file home\RepOrdenPublicacion.aspx.cs (Line 57).
+Removed attribute AutoEventWireup from file home\reportprueba.aspx.
+Removed attribute Codebehind from file home\reportprueba.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\reportprueba.aspx.cs (Line 19).
+Removed attribute AutoEventWireup from file home\reportviewer.aspx.
+Removed attribute Codebehind from file home\reportviewer.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\reportViewer.aspx.cs (Line 31).
+Removed attribute AutoEventWireup from file home\reppropboletin.aspx.
+Removed attribute Codebehind from file home\reppropboletin.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\RepPropBoletin.aspx.cs (Line 33).
+Warning: Access level of 'btnVerificar_Click' changed to 'protected' in file home\RepPropBoletin.aspx.cs (Line 121).
+Removed attribute AutoEventWireup from file home\reprenovadas.aspx.
+Removed attribute Codebehind from file home\reprenovadas.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\repRenovadas.aspx.cs (Line 38).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\repRenovadas.aspx.cs (Line 65).
+Removed attribute AutoEventWireup from file home\reprenovadoporotro.aspx.
+Removed attribute Codebehind from file home\reprenovadoporotro.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\repRenovadoPorOtro.aspx.cs (Line 51).
+Warning: Access level of 'btnGenerar_Click' changed to 'protected' in file home\repRenovadoPorOtro.aspx.cs (Line 153).
+Warning: Access level of 'btnGenExcel_Click' changed to 'protected' in file home\repRenovadoPorOtro.aspx.cs (Line 490).
+Removed attribute AutoEventWireup from file home\repsitpresentada.aspx.
+Removed attribute Codebehind from file home\repsitpresentada.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\repSitPresentada.aspx.cs (Line 40).
+Warning: Access level of 'btnGenerar_Click' changed to 'protected' in file home\repSitPresentada.aspx.cs (Line 122).
+Warning: Access level of 'btnGenExcel_Click' changed to 'protected' in file home\repSitPresentada.aspx.cs (Line 711).
+Removed attribute AutoEventWireup from file home\repsittramitesvarios.aspx.
+Removed attribute Codebehind from file home\repsittramitesvarios.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\repSitTramitesVarios.aspx.cs (Line 43).
+Warning: Access level of 'btnGenerar_Click' changed to 'protected' in file home\repSitTramitesVarios.aspx.cs (Line 121).
+Warning: Access level of 'btnGenExcel_Click' changed to 'protected' in file home\repSitTramitesVarios.aspx.cs (Line 273).
+Removed attribute AutoEventWireup from file home\reptramitesitsigte.aspx.
+Removed attribute Codebehind from file home\reptramitesitsigte.aspx.
+Warning: Access level of 'ddlTramiteID_SelectedIndexChanged' changed to 'protected' in file home\repTramiteSitSigte.aspx.cs (Line 75).
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\repTramiteSitSigte.aspx.cs (Line 89).
+Warning: Access level of 'btnGenerar_Click' changed to 'protected' in file home\repTramiteSitSigte.aspx.cs (Line 162).
+Warning: Access level of 'btnGenExcel_Click' changed to 'protected' in file home\repTramiteSitSigte.aspx.cs (Line 296).
+Removed attribute AutoEventWireup from file home\reptramitesrecientes.aspx.
+Removed attribute Codebehind from file home\reptramitesrecientes.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\repTramitesRecientes.aspx.cs (Line 40).
+Warning: Access level of 'btnGenerar_Click' changed to 'protected' in file home\repTramitesRecientes.aspx.cs (Line 119).
+Warning: Access level of 'btnGenExcel_Click' changed to 'protected' in file home\repTramitesRecientes.aspx.cs (Line 311).
+Removed attribute AutoEventWireup from file home\situacionconsulta.aspx.
+Removed attribute Codebehind from file home\situacionconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\SituacionConsulta.aspx.cs (Line 56).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\SituacionConsulta.aspx.cs (Line 81).
+Warning: Access level of 'BtnAgregar_Click' changed to 'protected' in file home\SituacionConsulta.aspx.cs (Line 186).
+Removed attribute AutoEventWireup from file home\situaciondetalle.aspx.
+Removed attribute Codebehind from file home\situaciondetalle.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\SituacionDetalle.aspx.cs (Line 121).
+Warning: Access level of 'btnAgregar_Click' changed to 'protected' in file home\SituacionDetalle.aspx.cs (Line 279).
+Warning: Access level of 'btnModificar_Click' changed to 'protected' in file home\SituacionDetalle.aspx.cs (Line 284).
+Warning: Access level of 'btnEliminar_Click' changed to 'protected' in file home\SituacionDetalle.aspx.cs (Line 289).
+Warning: Access level of 'btnCancelar_Click' changed to 'protected' in file home\SituacionDetalle.aspx.cs (Line 295).
+Warning: Access level of 'btnConfirmar_Click' changed to 'protected' in file home\SituacionDetalle.aspx.cs (Line 313).
+Removed attribute AutoEventWireup from file home\test_ui.aspx.
+Removed attribute Codebehind from file home\test_ui.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\Test_UI.aspx.cs (Line 20).
+Removed attribute AutoEventWireup from file home\tramiteconsulta.aspx.
+Removed attribute Codebehind from file home\tramiteconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\TramiteConsulta.aspx.cs (Line 59).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\TramiteConsulta.aspx.cs (Line 82).
+Removed attribute AutoEventWireup from file home\tramitesitconsulta.aspx.
+Removed attribute Codebehind from file home\tramitesitconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\TramiteSitConsulta.aspx.cs (Line 51).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\TramiteSitConsulta.aspx.cs (Line 74).
+Removed attribute AutoEventWireup from file home\tramitesitsgteconsulta.aspx.
+Removed attribute Codebehind from file home\tramitesitsgteconsulta.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\TramiteSitSgteConsulta.aspx.cs (Line 68).
+Warning: Access level of 'btBuscar_Click' changed to 'protected' in file home\TramiteSitSgteConsulta.aspx.cs (Line 91).
+Warning: Access level of 'ddlTramite_SelectedIndexChanged' changed to 'protected' in file home\TramiteSitSgteConsulta.aspx.cs (Line 203).
+Removed attribute AutoEventWireup from file home\tramitesvarios.aspx.
+Removed attribute Codebehind from file home\tramitesvarios.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\TramitesVarios.aspx.cs (Line 25).
+Warning: Access level of 'btnAsignarMarcas_Click' changed to 'protected' in file home\TramitesVarios.aspx.cs (Line 515).
+Removed attribute AutoEventWireup from file home\tramitesvariosdetalle.aspx.
+Removed attribute Codebehind from file home\tramitesvariosdetalle.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\TramitesVariosDetalle.aspx.cs (Line 26).
+Warning: Access level of 'btnGrabar_Click' changed to 'protected' in file home\TramitesVariosDetalle.aspx.cs (Line 381).
+Warning: Access level of 'btnEliminar_Click' changed to 'protected' in file home\TramitesVariosDetalle.aspx.cs (Line 389).
+Warning: Access level of 'dgMarcasAsignadas_SelectedIndexChanged' changed to 'protected' in file home\TramitesVariosDetalle.aspx.cs (Line 411).
+Removed attribute TargetSchema from file home\uctabstrip.ascx.
+Removed attribute Codebehind from file home\uctabstrip.ascx.
+Removed attribute AutoEventWireup from file home\uctabstrip.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\ucTabStrip.ascx.cs (Line 19).
+Warning: Access level of 'SelectedIndexChange' changed to 'protected' in file home\ucTabStrip.ascx.cs (Line 98).
+Removed attribute AutoEventWireup from file home\veravisoopodoc.aspx.
+Removed attribute Codebehind from file home\veravisoopodoc.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\VerAvisoOpoDoc.aspx.cs (Line 30).
+Removed attribute AutoEventWireup from file home\verdocmerge.aspx.
+Removed attribute Codebehind from file home\verdocmerge.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\VerDocMerge.aspx.cs (Line 36).
+Removed attribute AutoEventWireup from file reports\clientactivityreport.aspx.
+Removed attribute Codebehind from file reports\clientactivityreport.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file reports\ClientActivityReport.aspx.cs (Line 31).
+Warning: Access level of 'btnGenerar_Click' changed to 'protected' in file reports\ClientActivityReport.aspx.cs (Line 59).
+Removed attribute TargetSchema from file tools\controls\dynheader.ascx.
+Removed attribute Codebehind from file tools\controls\dynheader.ascx.
+Removed attribute AutoEventWireup from file tools\controls\dynheader.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file tools\controls\DynHeader.ascx.cs (Line 56).
+Removed attribute TargetSchema from file tools\controls\fieldvalidator.ascx.
+Removed attribute Codebehind from file tools\controls\fieldvalidator.ascx.
+Removed attribute AutoEventWireup from file tools\controls\fieldvalidator.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file tools\controls\FieldValidator.ascx.cs (Line 32).
+Removed attribute TargetSchema from file tools\controls\formvalidator.ascx.
+Removed attribute Codebehind from file tools\controls\formvalidator.ascx.
+Removed attribute AutoEventWireup from file tools\controls\formvalidator.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file tools\controls\FormValidator.ascx.cs (Line 26).
+Removed attribute TargetSchema from file tools\controls\header.ascx.
+Removed attribute Codebehind from file tools\controls\header.ascx.
+Removed attribute AutoEventWireup from file tools\controls\header.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file tools\controls\Header.ascx.cs (Line 56).
+Warning: Access level of 'ddlMenu1_SelectedIndexChanged' changed to 'protected' in file tools\controls\Header.ascx.cs (Line 153).
+Warning: Access level of 'btnBuscar_Click' changed to 'protected' in file tools\controls\Header.ascx.cs (Line 165).
+Removed attribute TargetSchema from file tools\controls\headerordentrabajo.ascx.
+Removed attribute Codebehind from file tools\controls\headerordentrabajo.ascx.
+Removed attribute AutoEventWireup from file tools\controls\headerordentrabajo.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file tools\controls\HeaderOrdenTrabajo.ascx.cs (Line 18).
+Removed attribute TargetSchema from file tools\controls\login.ascx.
+Removed attribute Codebehind from file tools\controls\login.ascx.
+Removed attribute AutoEventWireup from file tools\controls\login.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file tools\controls\Login.ascx.cs (Line 37).
+Warning: Access level of 'btnLogin_Click' changed to 'protected' in file tools\controls\Login.ascx.cs (Line 44).
+Added folder App_Code\Home.
+Moved file home\tclass.cs to the App_Code\Home\ directory.
+Added folder App_Code\Tools\Helpers.
+Moved file tools\helpers\myapplication.cs to the App_Code\Tools\Helpers\ directory.
+Reference to code-behind class 'Berke.Marcas.WebUI.Tools.Controls.FieldValidator' has been found in the file 'tools\controls\fieldvalidatorbuilder.cs' at line '18'. A stub class for 'Berke.Marcas.WebUI.Tools.Controls.FieldValidator' will be generated in 'App_Code\Migrated' folder.
+Added folder App_Code\Tools\Controls.
+Moved file tools\controls\fieldvalidatorbuilder.cs to the App_Code\Tools\Controls\ directory.
+Moved file MergeTools.cs to the App_Code\ directory.
+Moved file Global.asax.cs to the App_Code\ directory.
+Moved file tools\helpers\urlparam.cs to the App_Code\Tools\Helpers\ directory.
+Moved file tools\helpers\resources.cs to the App_Code\Tools\Helpers\ directory.
+Moved file tools\helpers\globals.cs to the App_Code\Tools\Helpers\ directory.
+Moved file home\tmarcas.cs to the App_Code\Home\ directory.
+Moved file home\tclase.cs to the App_Code\Home\ directory.
+Moved file tools\helpers\const.cs to the App_Code\Tools\Helpers\ directory.
+Moved file tools\helpers\configreader.cs to the App_Code\Tools\Helpers\ directory.
+Moved file AssemblyInfo.cs to the App_Code\ directory.
+Moved file tools\helpers\mysession.cs to the App_Code\Tools\Helpers\ directory.
+Moved file AvisoOpoTools.cs to the App_Code\ directory.
+Updated the attribute 'Inherits' with value 'Berke.Marcas.WebUI.Tools.Controls.Migrated_FieldValidator' in the file 'tools\controls\fieldvalidator.ascx'.
+Code file 'App_Code\Migrated\tools\controls\Stub_fieldvalidator_ascx_cs.cs' was created and contains an abstract class 'Migrated_FieldValidator' used as a base class for the class 'Berke.Marcas.WebUI.Tools.Controls.FieldValidator'.    tools\controls\fieldvalidator.ascx.cs
+Changed HTML validation schema for all projects to 'Internet Explorer 6.0'.
+Removed file Bin\Berke.Marcas.WebUI.dll.
+Removed file Bin\Berke.Marcas.WebUI.pdb.
+Removed file Berke.Marcas.WebUI.csproj.
+Removed file Berke.Marcas.WebUI.csproj.webinfo.
+Project Berke.Marcas.WebUI.csproj has been converted successfully at August 19 2013, 12:25:54.

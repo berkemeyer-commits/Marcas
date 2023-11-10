@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ClaseDS" targetNamespace="http://tempuri.org/ClaseDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ClaseDS.xsd" xmlns:mstns="http://tempuri.org/ClaseDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ClaseDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Clase">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="Nro" type="xs:int" minOccurs="0" />
+							<xs:element name="NizaEdicionID" type="xs:int" minOccurs="0" />
+							<xs:element name="ClaseTipoID" type="xs:int" minOccurs="0" />
+							<xs:element name="Descrip" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripBreve" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="NizaEdicion">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="Descrip" type="xs:string" minOccurs="0" />
+							<xs:element name="Vigente" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Abrev" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ClaseTipo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="Descrip" type="xs:string" />
+							<xs:element name="Abrev" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Clase_Idioma">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ClaseID" type="xs:int" />
+							<xs:element name="IdiomaID" type="xs:int" />
+							<xs:element name="Descrip" type="xs:string" />
+							<xs:element name="DescripBreve" type="xs:string" minOccurs="0" />
+							<xs:element name="Idioma" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="ClaseDSKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Clase" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:key name="ClaseDSKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:NizaEdicion" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+		<xs:keyref name="NizaEdicionClase" refer="ClaseDSKey2">
+			<xs:selector xpath=".//mstns:Clase" />
+			<xs:field xpath="mstns:NizaEdicionID" />
+		</xs:keyref>
+		<xs:unique name="ClaseDSKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ClaseTipo" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:keyref name="ClaseTipoClase" refer="ClaseDSKey3">
+			<xs:selector xpath=".//mstns:Clase" />
+			<xs:field xpath="mstns:ClaseTipoID" />
+		</xs:keyref>
+		<xs:unique name="ClaseDSKey4" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Clase_Idioma" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:keyref name="ClaseClase_Idioma" refer="ClaseDSKey1">
+			<xs:selector xpath=".//mstns:Clase_Idioma" />
+			<xs:field xpath="mstns:ClaseID" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

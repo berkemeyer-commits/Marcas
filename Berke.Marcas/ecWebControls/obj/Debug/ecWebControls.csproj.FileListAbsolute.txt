@@ -1,0 +1,6 @@
+C:\DEV\Berke.Marcas\ecWebControls\bin\Debug\ecWebControls.dll
+C:\DEV\Berke.Marcas\ecWebControls\bin\Debug\ecWebControls.pdb
+C:\DEV\Berke.Marcas\ecWebControls\obj\Debug\ecWebControls.csproj.CoreCompileInputs.cache
+C:\DEV\Berke.Marcas\ecWebControls\obj\Debug\ecWebControls.dll
+C:\DEV\Berke.Marcas\ecWebControls\obj\Debug\ecWebControls.pdb
+C:\DEV\Berke.Marcas\ecWebControls\obj\Debug\ecWebControls.csprojAssemblyReference.cache

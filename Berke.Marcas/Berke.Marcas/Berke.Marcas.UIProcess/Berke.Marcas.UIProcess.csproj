@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99B88982-1CA3-4824-9F90-7897572CB356}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Berke.Marcas.UIProcess</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Berke.Marcas.UIProcess</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Berke.Marcas.BizDocuments">
+      <HintPath>..\Berke.Marcas.BizDocuments\bin\Debug\Berke.Marcas.BizDocuments.dll</HintPath>
+    </Reference>
+    <Reference Include="fwkcommon">
+      <Name>fwkcommon</Name>
+      <HintPath>..\..\..\..\..\..\Program Files\fwkdevenv\fwkcommon.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\devfwk</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="fwkcore">
+      <Name>fwkcore</Name>
+      <HintPath>..\..\..\..\..\..\Program Files\fwkdevenv\fwkcore.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\devfwk</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\AgenteBerke.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\AgenteLocal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Area.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Aviso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Boletin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\CambioCliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Clase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\ClaseClase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Cliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Corresp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Diario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Documento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\DocumentoTipo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\DocumPlantilla.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Expediente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\ExpedientePendiente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\ExpeInstruccion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\ExpeMarca.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\ExpeMarcaCambioSit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Fecha.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Funcionario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\HI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Instruccion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Marca.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\MarcaActualizar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\MarcaRegRen_Pertenencia.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Menu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Merge.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Motivo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\NizaEdicion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Notificacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\OtMarca.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Pais.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Pendiente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\PertenenciaMotivo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\PoderTipo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Prioridad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Proceso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Propietario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Registro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Renovacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Situacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Tramite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\TramiteSit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\TramiteSitSgte.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\TV.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\tvCN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Unidad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Usuario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Berke.Libs.Base\Berke.Libs.Base.csproj">
+      <Project>{e1e46ecb-c8aa-4157-9de4-3a677014fa54}</Project>
+      <Name>Berke.Libs.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Berke.Libs.Gateway\Berke.Libs.Gateway.csproj">
+      <Project>{c7558dae-8268-4b38-846e-e05e378bb566}</Project>
+      <Name>Berke.Libs.Gateway</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Berke.Libs.WebBase\Berke.Libs.WebBase.csproj">
+      <Project>{93941efa-c231-4f3f-b883-73ec771aee4b}</Project>
+      <Name>Berke.Libs.WebBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

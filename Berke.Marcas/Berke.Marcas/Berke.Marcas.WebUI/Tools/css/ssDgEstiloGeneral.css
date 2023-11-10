@@ -1,0 +1,93 @@
+.TituloGrilla
+{
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.Grilla
+{
+	width:100%;
+	border:solid 1px #6699cc;
+}
+.EstiloItem
+{
+	font-size:7pt;
+	font-family:Verdana;
+	background-color:whitesmoke;
+	text-align:center;
+}
+.EstiloHeader
+{
+	font-size:7pt;
+	font-family:Verdana;
+	font-weight: bold;
+	background-color: lightgrey;
+}
+.EstiloFooter
+{
+	font-size:7pt;
+	font-family:Verdana;
+	font-weight: bold;
+	background-color: lightgrey;
+}
+.CabeceraArea1
+{
+	font-family:Verdana;
+	font-size:9pt;
+}
+.CabeceraArea2
+{
+	font-family:Verdana;
+	font-size:8pt;
+}
+.dgDropDownList1
+{
+	border-left-color:"DimGray";
+	border-right-color:"DimGray";
+	border-top-color:"DimGray";
+	border-bottom-color:"DimGray";
+	border-style:Solid;
+	border-width:1px;
+	background-color:"WhiteSmoke";
+	font-family:Verdana;
+	font-size:8pt;
+	width:100%;	
+}
+.dgTextBox1
+{
+	font-family:Verdana;
+	font-size:8pt;
+	width:100%;
+}
+.dgTextBox2
+{
+	font-family:Verdana;
+	font-size:8pt;
+	width:240px;
+}
+.dgButton
+{
+	border-color:#666666;
+	border:solid 1px;
+	background-color:#C0C0C0;
+	Font-family:"Verdana";
+	Font-Size:10;
+}
+.dgLinkButton1
+{
+	Font-family:"Verdana";
+	Font-Size:7pt;
+	font-weight:bold
+}
+
+.borde_izq 
+{
+	BORDER-LEFT: #cccccc thin solid; 
+}
+.EstiloResaltar
+{
+	border-bottom:solid 1px #c0c0c0;
+}
+.EstiloResaltarBordeSuperior
+{
+	border-top:solid 1px #c0c0c0;
+}

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+
+  <menuItem><text> Marcas </text><width>150</width><horizontalalign>center</horizontalalign>
+
+    <subMenu> 
+    
+      <menuItem><text>Ingresar</text><width>150</width><horizontalalign>left</horizontalalign>
+          <subMenu>
+           
+            <menuItem><text> HI Registro Nueva</text><width>150</width><horizontalalign>left</horizontalalign>
+					<url>../Home/HIRegistroMarcas.aspx</url>     
+            </menuItem>
+
+            <menuItem><text> HI Renovacion</text><width>150</width><horizontalalign>left</horizontalalign>
+			        <url>../Home/Renovacion.aspx</url>
+            </menuItem>
+
+            <menuItem><text> HI Tramites Varios</text><width>150</width><horizontalalign>left</horizontalalign>
+				<subMenu>
+
+					<menuItem><text> Cambio de Nombre </text><width>150</width><horizontalalign>left</horizontalalign>
+						<url>../Home/TramitesVarios.aspx?tramiteID=4</url>
+					</menuItem>
+
+					<menuItem><text> Cambio de Domicilio </text><width>150</width><horizontalalign>left</horizontalalign>
+						<url>../Home/TramitesVarios.aspx?tramiteID=6</url>
+					</menuItem>
+
+					<menuItem><text> Fusion</text><width>150</width><horizontalalign>left</horizontalalign>
+						<url>../Home/TramitesVarios.aspx?tramiteID=5</url>
+					</menuItem>
+
+					<menuItem><text> Transferencia </text><width>150</width><horizontalalign>left</horizontalalign>
+						<url>../Home/TramitesVarios.aspx?tramiteID=3</url>
+					</menuItem>
+
+					<menuItem><text> Licencia </text><width>150</width><horizontalalign>left</horizontalalign>
+						<url>../Home/TramitesVarios.aspx?tramiteID=7</url>
+					</menuItem>
+
+					<menuItem><text> Duplicado de Titulo </text><width>150</width><horizontalalign>left</horizontalalign>
+						<url>../Home/TramitesVarios.aspx?tramiteID=8</url>
+					</menuItem>
+
+					<menuItem><text> Cambio de Nombre y Domicilio</text><width>150</width><horizontalalign>left</horizontalalign>
+						<url>../Home/TramitesVarios.aspx?tramiteID=10</url>
+					</menuItem>
+
+				</subMenu>
+            </menuItem>
+
+            <menuItem><text> Cambios de Situacion </text><width>150</width><horizontalalign>left</horizontalalign>
+               <url>../Home/ExpedienteCambioSit.aspx</url>
+            </menuItem>
+
+            <menuItem><text> Cambios de Situacion ( Masivamente ) </text><width>150</width><horizontalalign>left</horizontalalign>
+               <url>../Home/ExpeMarcaCambioSit.aspx</url>
+            </menuItem>
+
+            <menuItem><text> Instrucciones</text><width>150</width><horizontalalign>left</horizontalalign>
+			             <url>../Home/ExpeDocIngresar.aspx</url>
+            </menuItem>
+            
+            <menuItem><text> Instrucciones (Masivas)</text><width>150</width><horizontalalign>left</horizontalalign>
+			             <url>../Home/InstruccionIngresar.aspx</url>
+            </menuItem>
+
+         </subMenu>
+      </menuItem>
+
+      <menuItem><text> Modificaciones  </text><width>150</width><horizontalalign>left</horizontalalign>
+         <subMenu>			
+
+            <menuItem><text> Cambios de Situacion </text><width>150</width><horizontalalign>left</horizontalalign>
+												 <url>../Home/ExpedienteCambioSit_Modificar.aspx </url> 
+            </menuItem>
+
+            <menuItem><text> Cambio de Cliente </text><width>150</width><horizontalalign>left</horizontalalign>
+					<url>../Home/CambioCliente.aspx</url>
+			</menuItem>
+  
+         	<menuItem><text> Cambios de Estado </text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/ExpeMarcaCambioEstado.aspx</url>
+			</menuItem>
+												 
+           
+
+         </subMenu>
+      </menuItem>
+      
+      
+      
+      <menuItem><text> Consultas  </text><width>150</width><horizontalalign>left</horizontalalign>
+         <subMenu>
+         
+           <menuItem><text> Marcas </text><width>150</width><horizontalalign>left</horizontalalign>
+           
+              <subMenu>
+                <menuItem><text> Propias</text><width>150</width><horizontalalign>left</horizontalalign>
+                   <url>../Home/ExpeMarcaConsultar.aspx?pertenciaParam=Propias</url>
+                </menuItem>
+     
+                <menuItem><text> Terceros</text><width>150</width><horizontalalign>left</horizontalalign>
+                   <url>../Home/ExpeMarcaConsultar.aspx?pertenciaParam=Terceros</url>
+                </menuItem>
+              
+                <menuItem><text> Histórico de Marcas</text><width>150</width><horizontalalign>left</horizontalalign>
+                   <url>../Home/ExpeMarcaConsultar.aspx?pertenciaParam=Historico</url>
+                </menuItem>
+   
+               <menuItem><text> En Stand By</text><width>150</width><horizontalalign>left</horizontalalign>
+                   <url>../Home/ExpeMarcaConsultar.aspx?pertenciaParam=StandBy</url>
+                </menuItem>
+  
+                <menuItem><text> Sustituidas</text><width>150</width><horizontalalign>left</horizontalalign>
+                   <url>../Home/ExpeMarcaConsultar.aspx?pertenciaParam=Sustituida</url>
+                </menuItem>
+  
+                   <menuItem><text> En General</text><width>150</width><horizontalalign>left</horizontalalign>
+                   <url>../Home/ExpeMarcaConsultar.aspx</url>
+                </menuItem>
+                
+             </subMenu>
+
+           </menuItem>
+           
+   
+           <menuItem><text> H.I. Marcas </text><width>150</width><horizontalalign>left</horizontalalign>
+             <url>../Home/OtMarcaConsulta.aspx?Oper=Consulta </url>
+           </menuItem>
+
+         </subMenu>
+      </menuItem>      
+          
+
+      <menuItem><text> Configuración  </text><width>150</width><horizontalalign>left</horizontalalign>
+      	<subMenu>
+
+			<menuItem><text> Situaciones </text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/SituacionConsulta.aspx?Oper=Mantenimiento</url>
+			</menuItem>
+
+			<menuItem><text> Notificaciones </text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/NotificacionConsulta.aspx</url>
+			</menuItem>
+
+		</subMenu>
+      </menuItem>
+
+
+      <menuItem><text> Captura Masiva (Boletín)</text><width>250</width><horizontalalign>left</horizontalalign>
+  				<url>../Home/BoletinImportar.aspx </url>  
+      </menuItem>
+
+    </subMenu>
+  </menuItem>
+
+
+
+ <menuItem><text> Poderes </text><width>150</width><horizontalalign>center</horizontalalign>
+        <url>../Home/PoderConsulta.aspx?Oper=Mantenimiento  </url>  
+ </menuItem>
+  
+ <menuItem><text> Notificaciones </text><width>150</width><horizontalalign>center</horizontalalign>
+    <subMenu>
+
+	<menuItem><text> Ingresar </text><width>150</width><horizontalalign>left</horizontalalign>
+       <url>../Home/AvisoIngresar.aspx</url>
+    </menuItem>  
+     
+	<menuItem><text> Consultas </text><width>150</width><horizontalalign>left</horizontalalign>
+       <url>../Home/AvisoConsulta.aspx</url>
+    </menuItem>     
+
+   </subMenu>
+ </menuItem>
+
+
+ <menuItem><text> Consultas  </text><width>150</width><horizontalalign>center</horizontalalign>
+
+   <subMenu>
+    
+      <menuItem><text> 1.Tablas Paramétricas </text><width>150</width><horizontalalign>left</horizontalalign>
+
+        <subMenu>
+      
+				<menuItem><text> a. Diarios </text><width>150</width><horizontalalign>left</horizontalalign>
+						<url>../Home/DiarioConsulta.aspx</url>
+				</menuItem>
+
+     
+				<menuItem><text> b. Clases </text><width>150</width><horizontalalign>left</horizontalalign>
+						<url>../Home/ClaseConsulta.aspx</url>
+				</menuItem>
+
+				<menuItem><text> c. Procesos </text><width>150</width><horizontalalign>left</horizontalalign>
+						<url>../Home/ProcesoConsulta.aspx</url>
+				</menuItem>
+
+				<menuItem><text> d. Tipos de Documento </text><width>150</width><horizontalalign>left</horizontalalign>
+						<url>../Home/DocumentoTipoConsulta.aspx</url>
+				</menuItem>
+
+				<menuItem><text> e. Trámites </text><width>150</width><horizontalalign>left</horizontalalign>
+						<url>../Home/TramiteConsulta.aspx</url>
+				</menuItem>
+
+				<menuItem><text> f. Situaciones </text><width>150</width><horizontalalign>left</horizontalalign>
+							<url>../Home/SituacionConsulta.aspx</url>
+				</menuItem>
+				
+				<menuItem><text> g. Situaciones por Tramite </text><width>150</width><horizontalalign>left</horizontalalign>
+							<url>../Home/TramiteSitConsulta.aspx</url>
+				</menuItem>
+				
+				<menuItem><text> h. Transiciones entre Situaciones </text><width>150</width><horizontalalign>left</horizontalalign>
+							<url>../Home/TramiteSitSgteConsulta.aspx</url>
+				</menuItem>
+				
+				<menuItem><text> h. Instrucciones </text><width>150</width><horizontalalign>left</horizontalalign>
+							<url>../Home/InstruccionTipo.aspx</url>
+				</menuItem>
+				
+				
+
+        </subMenu>
+     
+      </menuItem>
+    
+      <menuItem><text> 2. Entidades </text><width>150</width><horizontalalign>left</horizontalalign>
+
+        <subMenu>
+		        
+			<menuItem><text> a. Funcionarios </text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/FuncionarioConsulta.aspx</url>
+			</menuItem>
+
+			<menuItem><text> b. Agentes Locales </text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/AgenteLocalConsulta.aspx</url>
+			</menuItem>
+
+			<menuItem><text> c. Clientes </text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/ClienteConsulta.aspx</url>
+			</menuItem>
+		      
+			<menuItem><text> d. Propietarios </text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/PropietarioConsulta.aspx</url>
+			</menuItem>
+			
+         </subMenu>
+     
+      </menuItem>
+         
+       <menuItem><text> 4. Documentos </text><width>150</width><horizontalalign>left</horizontalalign>
+							<url>../Home/DocumentoConsulta.aspx</url>
+      </menuItem>
+   
+      <menuItem><text> 5. Correspondencia </text><width>150</width><horizontalalign>left</horizontalalign>
+							<url>../Home/CorrespConsulta.aspx</url>
+      </menuItem>
+        
+	  <menuItem><text> 6. Cambios de Situación de Marcas </text><width>150</width><horizontalalign>left</horizontalalign>
+        <url>../Home/ExpeMarcaCambioSitConsulta.aspx </url>
+      </menuItem>	  
+     
+    </subMenu>
+ </menuItem>
+ 
+ <menuItem><text> Reportes </text><width>150</width><horizontalalign>center</horizontalalign>
+ 
+   <subMenu>
+   
+        <menuItem><text> 1. Para Carga DATAFLEX </text><width>150</width><horizontalalign>left</horizontalalign>
+         
+          <subMenu>
+		   	<menuItem><text> a. Instrucciones Ingresadas </text><width>150</width><horizontalalign>left</horizontalalign>
+			 			<url>../Home/repInstruccion.aspx</url>
+            </menuItem>
+      
+            <menuItem><text> b. Cambios de Situación Ingresados </text><width>150</width><horizontalalign>left</horizontalalign>
+					      		<url>../Home/RepSitPresentada.aspx</url>
+            </menuItem>
+      
+            <menuItem><text> c. Tramites Varios Ingresados </text><width>150</width><horizontalalign>left</horizontalalign>
+					      		<url>../Home/repSitTramitesVarios.aspx</url>
+            </menuItem>
+
+			<menuItem><text> d. Cambios de Estado </text><width>150</width><horizontalalign>left</horizontalalign>
+			 	<url>../Home/repExpedientePertenencia.aspx</url>
+            </menuItem>           
+           
+           
+          </subMenu>
+		</menuItem>
+					
+        <menuItem><text> 2. Boletin </text><width>200</width><horizontalalign>left</horizontalalign>
+			<url>../Home/repBoletinGeneral.aspx</url>
+		</menuItem>     						 
+		
+        <menuItem><text> 3. Marcas y Trámites </text><width>200</width><horizontalalign>left</horizontalalign>
+		 <subMenu>
+			<menuItem><text> a. Tramites Recientes </text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/repTramitesRecientes.aspx</url>
+			</menuItem>		
+        
+			<menuItem><text> b. Por Cliente (Ofic.)</text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/repMA_R_36.aspx</url>
+			</menuItem>	
+			
+		    <menuItem><text> c. Por Cliente (p/Env.)</text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/repMA_R_56.aspx</url>
+			</menuItem>	
+						
+			<menuItem><text> d. Por Propietario (Oficina)</text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/Rep_38.aspx</url>
+			</menuItem>				
+			
+			<menuItem><text> e. Por Propietario (p/Env.)</text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/Rep_39.aspx</url>
+			</menuItem>				
+			
+          </subMenu>
+		</menuItem>	
+			      		 
+		<menuItem><text> 4. Vencimientos </text><width>200</width><horizontalalign>left</horizontalalign>
+			<subMenu>
+			   <menuItem><text> a. Por Registro (Oficina)</text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/Rep_42.aspx</url>
+			   </menuItem>				
+			
+			   <menuItem><text> b. Por Agente y Prop. (p/Env.)</text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/Rep_43.aspx</url>
+			   </menuItem>			
+		 	</subMenu>
+		</menuItem>	     
+		<menuItem><text> 5. Sobres </text><width>150</width><horizontalalign>left</horizontalalign>
+ 			<url>../Home/Rep_48.aspx</url>
+ 		</menuItem>	
+ 		
+ 	    <menuItem><text> 6. Orden de Publicación </text><width>150</width><horizontalalign>left</horizontalalign>
+ 		   <url>../Home/Rep_41.aspx</url>
+ 		</menuItem>	
+ 		
+ 		 <menuItem><text> 7. MERGES </text><width>150</width><horizontalalign>left</horizontalalign>
+         
+            <subMenu>
+		      <menuItem><text> a. Cartas de Recaudo </text><width>150</width><horizontalalign>left</horizontalalign>
+			    <url>../Home/Merge.aspx?MergeID=1</url>
+              </menuItem>
+  		      <menuItem><text> b. Cartas de Concesiones </text><width>150</width><horizontalalign>left</horizontalalign>
+			    <url>../Home/Merge.aspx?MergeID=2</url>
+              </menuItem>
+  		      <menuItem><text> c. Cartas p/ Env. Título </text><width>150</width><horizontalalign>left</horizontalalign>
+			    <url>../Home/Merge.aspx?MergeID=3</url>
+              </menuItem>
+  		      <menuItem><text> d. Avisos de Vencimiento </text><width>150</width><horizontalalign>left</horizontalalign>
+			    <url>../Home/Merge.aspx?MergeID=4</url>
+              </menuItem>
+  		      <menuItem><text> e. Constancias </text><width>150</width><horizontalalign>left</horizontalalign>
+			    <url>../Home/Merge.aspx?MergeID=7</url>
+              </menuItem>
+          
+            </subMenu>
+	     </menuItem>			 
+   </subMenu>
+ </menuItem> 
+ 
+ <menuItem><text> Ledes </text><width>150</width><horizontalalign>left</horizontalalign>
+ <subMenu>
+      <menuItem><text> Ingresar </text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/LedesIngresar.aspx</url>
+      </menuItem>
+	  <menuItem><text> Consultar </text><width>150</width><horizontalalign>left</horizontalalign>
+				<url>../Home/LedesConsulta.aspx</url>
+	  </menuItem>
+ </subMenu>
+ </menuItem>   
+
+ 
+</menu>

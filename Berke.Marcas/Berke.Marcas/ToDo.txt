@@ -1,0 +1,2 @@
+Entidades: Implementar Cliente_Buscar
+3. Normalizar tabla TramiteSituacion

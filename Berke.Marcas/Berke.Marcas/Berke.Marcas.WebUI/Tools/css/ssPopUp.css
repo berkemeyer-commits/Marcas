@@ -1,0 +1,22 @@
+body
+{
+	background-color:"aliceblue"
+}
+.Titulo
+{
+	FONT-SIZE:13;
+	FONT-FAMILY: verdana; 
+	FONT-WEIGHT: bold;
+}
+.Etiqueta
+{
+	FONT-SIZE:11;
+	FONT-FAMILY: verdana; 
+	FONT-WEIGHT: bold;
+}
+
+.Texto
+{
+	FONT-SIZE:11;
+	FONT-FAMILY: verdana;
+}
